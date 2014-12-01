@@ -1,16 +1,3 @@
-
-body{
-  min-height: 100%; 
-  font-family: verdana, sans-serif;
-}
-h1 {
-    text-align: center;
-}
-.brand {
-    font-family: 'Avenida'; 
-    color: #841e2b;
-    font-size: 70px;
-}
 /* latin */
 @font-face {
     font-family: 'Avenida';
@@ -18,4 +5,134 @@ h1 {
     font-weight: 400;
     src: local('avenida'), url('../fonts/avenida.woff') format('woff');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Neucha'), url(http://fonts.gstatic.com/s/neucha/v7/kfCpWUYjzqqtPFESHGr73_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Neucha'), url(http://fonts.gstatic.com/s/neucha/v7/ViNoWbFDS_yEFSbzKGI9MPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body{
+  min-height: 100%; 
+  font-family: verdana, sans-serif;
+  background: url("../images/bg.jpg") no-repeat 70% 50%;
+  background-size: cover;
+}
+.text-center {
+    text-align: center;
+}
+@media only screen and (min-width: 768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        webkit-transition: padding .3s;
+        moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+}
+.navbar-default {
+    background-color: transparent;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #841e2b;
+}
+.navbar-default .navbar-brand {
+    font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #841e2b;
+    font-size: 45px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #555;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 25px;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #841e2b;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 25px;
+}
+.navbar-shrink {
+    background-color: #000;
+    border-color: #555;
+    padding: 6px 0;
+}
+.navbar-shrink .navbar-brand {
+    font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #841e2b;
+    font-size: 45px;
+}
+
+
+#footer {
+    min-height: 200px;
+    color: #555;
+    background-color: #000;
+    box-shadow: 0px 60px 60px 100px rgba(0,0,0,1.9);
+    margin-top: 1800px; /*Это для теста тут*/
+}
+#footer hr {
+    border-top: 1px solid #333;
+}
+#footer span.cp {
+    color: #841e2b;
+    font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+}
+.icon {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+.footer-icon {
+    top: 8px;
+    position: relative;
+}
+.list-inline {
+    margin:-5px;
+    padding: 15px;
+}
+.list-inline li {
+    padding:0 5px;
+    display:inline-block
+}
+.list-inline li a {
+    text-decoration: none;
+    color: #555;
+}
+.list-inline li a:hover,
+.list-inline li a:focus {
+    text-decoration: none;
+    color: #841e2b;
+}
+.footer-icon-container {
+    display: block;
+    height: 36px;
+    width: 36px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/*=========================RESPONSIVE LAYOUTS===========================*/
+
+@media only screen and (max-width: 995px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
 }
