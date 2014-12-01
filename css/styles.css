@@ -74,6 +74,12 @@ body{
     color: #841e2b;
     font-size: 45px;
 }
+.top-phone {
+    color: #841e2b;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 35px;
+    padding: 6px 20px;
+}
 
 #map {
     height: 400px;
