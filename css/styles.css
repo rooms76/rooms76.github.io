@@ -61,6 +61,12 @@ span.cp {
 .navbar-default {
     background-color: transparent;
 }
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #841e2b;
+    background-color: transparent;
+}
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: #841e2b;
@@ -132,7 +138,13 @@ span.cp {
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
 }
 
-
+#contacts span.it {
+    color: #ccc;
+    font-weight: bold;
+}
+#contacts span.cost-cmp {
+    padding-left: 60px;
+}
 #map {
     height: 400px;
 }
