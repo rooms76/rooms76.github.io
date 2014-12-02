@@ -63,7 +63,7 @@ window.onload = function () {
     var contentString = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<span class="cp">RoomS</span>'+
+        '<span>RoomS<br>ул. Красный Съезд, 10в</span>'+
 
         '</div>';
 
@@ -73,7 +73,7 @@ window.onload = function () {
 
     var map = new google.maps.Map(document.getElementById('map'), myOptions);
 
-    var myLatlng = new google.maps.LatLng(57.632726, 39.888447);
+    var myLatlng = new google.maps.LatLng(57.632663, 39.888827);
 
     var image = 'images/poi.png';
     var marker = new google.maps.Marker({
