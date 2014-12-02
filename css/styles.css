@@ -145,6 +145,11 @@ span.cp {
 #contacts span.cost-cmp {
     padding-left: 60px;
 }
+
+#participants {
+    min-height: 200px;
+}
+
 #map {
     height: 400px;
 }
