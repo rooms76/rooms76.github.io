@@ -3,7 +3,7 @@ window.onload = function () {
 
     'use strict';
 
-    var latlng = new google.maps.LatLng(57.632631, 39.886204);
+    var latlng = new google.maps.LatLng(57.632718, 39.887852);
 
     var styles = [
 
