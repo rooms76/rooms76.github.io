@@ -25,12 +25,12 @@
 body{
   min-height: 100%; 
   font-family: verdana, sans-serif;
-  background: #111 url("../images/bg.jpg") no-repeat 70% 50%;
-  background-size: cover;
+  background: #e8e8e8 url("../images/wall.jpg") 100% 100%;
+  /*background-size: cover;*/
 }
 .age-limit {
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #841e2b;
+    color: #831f2b;
     padding: 16px;
     background-color: #000;
     width: 65px;
@@ -39,11 +39,18 @@ body{
     right: 0px;
     font-size: 27px;
     font-weight: bold;
+    display: none;/*!!!!!*/
 }
 span.cp {
-    color: #841e2b;
+    color: #831f2b;
     font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 25px;
+}
+span.cp-big {
+    color: #831f2b;
+    font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 200px;
+    text-shadow: 20px 20px 20px #333;
 }
 .text-center {
     text-align: center;
@@ -64,16 +71,16 @@ span.cp {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #841e2b;
+    color: #f55674;
     background-color: transparent;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #841e2b;
+    color: #831f2b;
 }
 .navbar-default .navbar-brand {
     font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #841e2b;
+    color: #831f2b;
     font-size: 45px;
 }
 .navbar-default .navbar-nav>li>a {
@@ -83,56 +90,70 @@ span.cp {
 }
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    color: #841e2b;
+    color: #f55674;
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 25px;
 }
 .navbar-shrink {
-    background-color: #000;
-    border-color: #555;
-    padding: 6px 0;
+    background-color: #fcfcfc;
+    border-bottom: 2px solid #f55674;
+    padding: 0;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
 }
 .navbar-shrink .navbar-brand {
     font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #841e2b;
+    color: #831f2b;
     font-size: 45px;
+    background-image: url("../images/_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100%;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
 }
 .top-phone {
-    color: #841e2b;
+    color: #831f2b;
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 35px;
     padding: 6px 20px;
 }
-#content p {
+.content p {
     color: #999;
     font-size: 17px;
     text-indent: 30px;
     text-align: justify;
 }
-#content a {
-    color: #841e2b;
+.content a {
+    color: #f55674;
     text-decoration: none;
 }
-#content hr {
-    border-top: 1px solid #841e2b;
+.content hr {
+    border-top: 1px solid #f55674;
     margin: 50px 15px;
 }
-#content img {
+.content img {
     width: 100%;
-    border: 3px solid #ccc;
-    border-radius: 3px;
+    border: 0;
+    border-radius: 0;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
+    margin-bottom: 5%;
 }
 .offer {
-    margin: 20% 0;
+    margin: 10% 0;
     color: #ccc;
 }
 .offer h1 {
     color: #ccc;
     font-size: 45px;
+    background-image: url(../images/stripes.png);
 }
 .offer h2 {
     color: #999;
+}
+#rooms {
+    background-color: #fcfcfc;
+    padding: 5% 0;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
 }
 #rooms h2 {
     color: #ccc;
@@ -142,8 +163,17 @@ span.cp {
 #rooms hr {
     border-top: 1px dashed #333;
 }
+#rules {
+    margin-bottom: 5%;
+}
 #rules iframe {
     width: 100%;
+}
+#participants {
+    padding: 7% 0;
+}
+#participants img {
+    margin-bottom: 20%;
 }
 #participants h2 {
     color: #ccc;
@@ -151,6 +181,11 @@ span.cp {
     margin-bottom: 40px;
 }
 
+#contacts {
+    background-color: #fcfcfc;
+    padding: 5% 0;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
+}
 #contacts p {
     text-indent: 0px;
 }
@@ -173,8 +208,8 @@ span.cp {
 
 #footer {
     min-height: 200px;
-    color: #555;
-    background-color: #000;
+    color: #333;
+    background-color: #fcfcfc;
 }
 #footer hr {
     border-top: 1px solid #333;
@@ -252,7 +287,7 @@ span.cp {
 
 @media only screen and (max-width: 767px) {
     .navbar-default {
-        background-color: #000;
+        background-color: #fff;
     }
     .navbar-shrink {
         padding: 0px 0;
