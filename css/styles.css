@@ -118,7 +118,7 @@ span.cp-big {
     padding: 6px 20px;
 }
 .content p {
-    color: #999;
+    color: #333;
     font-size: 17px;
     text-indent: 30px;
     text-align: justify;
@@ -263,6 +263,11 @@ span.cp-big {
 #participants img {
     margin-bottom: 20%;
 }
+#participants a.all {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1%;
+}
 #participants h2 {
     color: #ccc;
     text-align: center;
@@ -270,15 +275,16 @@ span.cp-big {
 }
 
 #contacts {
+    color: #333;
     background-color: #fcfcfc;
-    padding: 5% 0;
+    padding: 2% 0;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
 }
 #contacts p {
     text-indent: 0px;
 }
 #contacts span.it {
-    color: #ccc;
+    color: #555;
     font-weight: bold;
 }
 #contacts span.cost-cmp {
