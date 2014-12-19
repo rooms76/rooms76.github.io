@@ -163,6 +163,31 @@ span.cp-big {
 #rooms hr {
     border-top: 1px dashed #333;
 }
+#process {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(131, 31, 43);
+    font-weight: bold;
+    background-color: #eee;
+    padding: 2% 0;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
+}
+#process > .point {
+    width: 20%;
+}
+#process > .happy {
+    width: 23%;
+}
+#process > .arrow {
+    width: 10%;
+}
+#process img {
+    width: 100%;
+}
+#process{
+    text-align: center;
+}
 #rules {
     margin-bottom: 5%;
 }
@@ -265,7 +290,6 @@ span.cp-big {
     border-radius: 50%;
     text-align: center;
 }
-
 /*=========================RESPONSIVE LAYOUTS===========================*/
 
 @media only screen and (max-width: 995px) {
