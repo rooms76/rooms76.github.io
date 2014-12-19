@@ -191,6 +191,18 @@ span.cp-big {
     position: relative;
     top: 40%;
 }
+#rooms .rooms-overlay > span.title {
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+#rooms .rooms-overlay > span.cost {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
 #rooms a.booking {
     color: #fff;
     position: absolute;
