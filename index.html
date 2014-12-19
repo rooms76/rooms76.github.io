@@ -95,16 +95,39 @@
           <div class="row">
 
             <div class="row">
-              <div class="col-sm-4">
+              <div class="col-sm-4 relative">
                 <img src="images/coh.jpg">
+                <div class="rooms-overlay">
+                  <ul>
+                    <li><span class="man"></span></li>
+                    <li><span class="man"></span></li>
+                    <li><span class="man"></span></li>
+                    <li><span class="man"></span></li>
+                  </ul>
+                  <span class="p-count"></span>
+                  <a class="booking">Забронировать!</a>
+                </div>
               </div>
 
-              <div class="col-sm-4">
+              <div class="col-sm-4 relative">
                 <img src="images/grandfather.jpg">
+                <div class="rooms-overlay">
+                  <ul>
+                    <li><span class="man"></span></li>
+                    <li><span class="man"></span></li>
+                    <li><span class="man"></span></li>
+                    <li><span class="man"></span></li>
+                  </ul>
+                  <span class="p-count"></span>
+                  <a class="booking">Забронировать!</a>
+                </div>
               </div>
 
-              <div class="col-sm-4">
+              <div class="col-sm-4 relative">
                 <img src="images/question.jpg">
+                <div class="rooms-overlay">
+                  <span class="p-count"></span>
+                </div>
               </div>
             </div>
 
@@ -245,7 +268,7 @@
               </li>
 
               <li>
-                <a href="" class="link-contrast footer-icon-container" target="_blank">
+                <a href="http://instagram.com/rooms76" class="link-contrast footer-icon-container" target="_blank">
                   <i class="icon footer-icon icon-instagram"></i>
                 </a>
               </li>
@@ -316,7 +339,7 @@
       $('.page-scroll').on('click', function(event) {
         event.preventDefault();
         var href = $(this).attr('href') || $(this).attr('data-href'),
-            paddingTop = parseInt($('body').css('padding-top')) || 70,
+            paddingTop = parseInt($('body').css('padding-top')) || 60,
             pos = $(href).offset().top - paddingTop;
         scrollNav = true;
         $('html,body').animate({scrollTop: pos}, 'slow', function() {
