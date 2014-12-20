@@ -140,15 +140,17 @@ span.cp-big {
 }
 .offer {
     margin: 10% 0;
-    color: #ccc;
+    color: #555;
 }
 .offer h1 {
     color: #ccc;
     font-size: 45px;
     background-image: url(../images/stripes.png);
+    background-repeat: no-repeat;
+    background-position-x: 60%;
 }
 .offer h2 {
-    color: #999;
+    color: #555;
 }
 #rooms {
     background-color: #fcfcfc;
