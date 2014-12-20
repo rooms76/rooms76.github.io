@@ -104,7 +104,7 @@ span.cp-big {
     font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #831f2b;
     font-size: 45px;
-    background-image: url("../images/_bg.jpg");
+    background-image: url("../images/logo-bg.jpg");
     background-repeat: no-repeat;
     background-position: 0 100%;
     background-size: 100%;
@@ -115,7 +115,7 @@ span.cp-big {
     color: #831f2b;
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 35px;
-    padding: 6px 20px;
+    padding: 6px 15px;
 }
 .content p {
     color: #333;
@@ -151,6 +151,8 @@ span.cp-big {
 }
 .offer h2 {
     color: #555;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 31px;
 }
 #rooms {
     background-color: #fcfcfc;
