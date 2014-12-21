@@ -10,7 +10,7 @@ window.onload = function () {
         {
             "stylers": [
                 { "visibility": "simplified" },
-                { "invert_lightness": true }
+                { "invert_lightness": false }
             ]
         },{
             "featureType": "transit.station",
@@ -21,17 +21,30 @@ window.onload = function () {
         },{
             "featureType": "road",
             "stylers": [
-                { "color": "#000000" }
+                { "color": "#c0c0c0" }
             ]
         },{
             "featureType": "landscape",
+            "elementType": "geometry.stroke",
             "stylers": [
-                { "color": "#141414" }
+                { "color": "#505050" },
+                { "visibility": "on" }
+            ]
+        },{
+            "featureType": "landscape",
+            "elementType": "geometry.fill",
+            "stylers": [
+                { "color": "#e8e8e8" }
+            ]
+        },{
+            "featureType": "landscape.natural",
+            "stylers": [
+                { "color": "#fcfcfc" }
             ]
         },{
             "elementType": "labels.text.fill",
             "stylers": [
-                { "color": "#808080" }
+                { "color": "#505050" }
             ]
         },{
             "featureType": "poi",
@@ -43,7 +56,12 @@ window.onload = function () {
             "stylers": [
                 { "saturation": 1 },
                 { "weight": 0.1 },
-                { "color": "#7f8080" }
+                { "color": "#202020" }
+            ]
+        },{
+            "featureType": "administrative.land_parcel",
+            "stylers": [
+                { "color": "#303030" }
             ]
         },{
         }
