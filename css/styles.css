@@ -28,19 +28,6 @@ body{
   background: #e8e8e8 url("../images/wall.jpg");
   background-size: 40%;
 }
-.age-limit {
-    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #831f2b;
-    padding: 16px;
-    background-color: #000;
-    width: 65px;
-    position: relative;
-    top: 70px;
-    right: 0px;
-    font-size: 27px;
-    font-weight: bold;
-    display: none;/*!!!!!*/
-}
 span.cp {
     color: #831f2b;
     font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -195,17 +182,26 @@ span.cp-big {
     position: relative;
     top: 40%;
 }
-#rooms .rooms-overlay > span.title {
+#rooms .rooms-overlay > span {
     color: #fff;
     position: absolute;
+}
+#rooms .rooms-overlay > span.title {
     top: 40%;
     left: 10%;
 }
 #rooms .rooms-overlay > span.cost {
-    color: #fff;
-    position: absolute;
     top: 50%;
     left: 10%;
+}
+#rooms .rooms-overlay > span.bonus {
+    color: #ccc;
+    top: 60%;
+    left: 10%;
+}
+#rooms .rooms-overlay > span.age-limit {
+    top: 10%;
+    right: 10%;
 }
 #rooms a.booking {
     color: #fff;
@@ -368,9 +364,6 @@ span.cp-big {
 /*=========================RESPONSIVE LAYOUTS===========================*/
 
 @media only screen and (max-width: 995px) {
-    .age-limit {
-        left: 0px;
-    }
     .top-phone {
         font-size: 20px;
         position: relative;
@@ -381,6 +374,9 @@ span.cp-big {
     }
     .offer {
         margin-bottom: 40px;
+    }
+    #rooms a.booking {
+        padding: 0% 5%;
     }
 }
 
@@ -394,6 +390,9 @@ span.cp-big {
     span.cp-big {
         font-size: 150px;
     }
+    #rooms a.booking {
+        padding: 2% 10%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -405,9 +404,6 @@ span.cp-big {
     }
     span.cp-big {
         font-size: 100px;
-    }
-    .age-limit {
-        top: 60px;
     }
 }
 
