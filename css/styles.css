@@ -218,6 +218,21 @@ span.cp-big {
     border: 3px solid #fff;
     cursor: pointer;
 }
+#rooms a.booking.more {
+    left: 75%;
+    right: 15%;
+    padding: 2% 8% 2% 5%;
+}
+#rooms .modal-body img {
+    width: 100%;
+    float: left;
+}
+#rooms .modal-body ul {
+
+ }
+#rooms .modal-body ul > li span:first-child {
+    font-weight: bold;
+}
 #rooms h2 {
     color: #ccc;
     text-align: center;
@@ -378,6 +393,9 @@ span.cp-big {
     #rooms a.booking {
         padding: 0% 5%;
     }
+    #rooms a.booking.more {
+        padding: 0% 5% 0% 1%;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -391,6 +409,9 @@ span.cp-big {
         font-size: 150px;
     }
     #rooms a.booking {
+        padding: 2% 10%;
+    }
+    #rooms a.booking.more {
         padding: 2% 10%;
     }
 }
