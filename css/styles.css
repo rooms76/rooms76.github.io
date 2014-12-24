@@ -250,6 +250,7 @@ span.cp-big {
     background-color: #eee;
     padding: 2% 0;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
+    text-align: center;
 }
 #process > .point {
     width: 20%;
@@ -263,8 +264,31 @@ span.cp-big {
 #process img {
     width: 50%;
 }
-#process{
+#for-who {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: rgb(131, 31, 43);
+    font-weight: bold;
+    background-color: #fcfcfc;
+    padding: 2% 0;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
     text-align: center;
+}
+#for-who > .point {
+    width: 30%;
+}
+#for-who img {
+    width: 70%;
+}
+#for-who > .point > img.family {
+    width: 90%;
+}
+#for-who > .point > img.friends {
+    width: 50%;
+}
+#for-who > .point > p {
+    padding-top: 5%;
 }
 #rules {
     margin-bottom: 5%;
