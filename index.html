@@ -59,6 +59,12 @@
       </div>
     </div>
 
+    <div id="success"></div>
+
+    <div class="fly-phone wow pulse" data-wow-duration="2.0s" data-wow-delay="0s">
+      <a data-toggle="modal" data-target="#callModal"><img src="images/phone-fly.png"></a>
+    </div>
+
     <div class="container-fluid">
 
       <div class="container content">
@@ -349,6 +355,37 @@
 
         </div><!--<div class="container content">  -->
 
+        <!-- Modal -->
+        <div class="modal fade bs-example-modal-sm" id="callModal" tabindex="-1" role="dialog" aria-labelledby="callModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="callModalLabel">Заказать звонок</h4>
+              </div>
+              <div class="modal-body">
+                <form role="form" method="POST" action="">
+                  <input type="text" value="rooms76.hithub.io" name="hostname" hidden="hidden">
+                  <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" class="form-control" id="name" name="name"
+                           maxlength="128" required=""
+                           data-validation-required-message="Введите свое имя." aria-invalid="true">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Ваш телефон</label>
+                    <input type="text" class="form-control" id="phone" name="phone"
+                           maxlength="32" required=""
+                           data-validation-required-message="Введите свой номер телефона." aria-invalid="true">
+                  </div>
+                  <button type="submit" class="btn btn-default">Перезвоните мне</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Modal -->
+
       </div>
 
 
@@ -398,6 +435,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -475,6 +513,67 @@
         itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
         navigation : false,
         pagination :  true
+      });
+
+
+      $("input").not("[type=submit]").jqBootstrapValidation({
+        preventSubmit: true,
+        submitError: function($form, event, errors) {
+          // additional error messages or events
+          $('#callModal').modal('hide');
+        },
+        submitSuccess: function($form, event) {
+          event.preventDefault(); // prevent default submit behaviour
+          $('#callModal').modal('hide');
+          // get values from FORM
+          var cleanerId = 0;
+          var name = $("input#name").val();
+          var phone = $("input#phone").val();
+          var hname = $("input#hostname").val();
+          var firstName = name; // For Success/Failure Message
+          // Check for white space in name for Success/Fail message
+          if (firstName.indexOf(' ') >= 0) {
+            firstName = name.split(' ').slice(0, -1).join(' ');
+          }
+          $.ajax({
+            url: $('form').eq(0).attr('action') || '#',
+            type: "POST",
+            data: {
+              name: name,
+              phone: phone,
+              hostname: hname || window.location.hostname
+            },
+            cache: false,
+            success: function() {
+              // Success message
+              $('#success').html("<div class='alert alert-success'>");
+              $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                  .append("</button>");
+              $('#success > .alert-success')
+                  .append("Ваш запрос отправлен. Мы свяжемся с вами в ближайшее время!");
+              $('#success > .alert-success')
+                  .append('</div>');
+              this.startCleaner();
+            },
+            error: function() {
+              // Fail message
+              $('#success').html("<div class='alert alert-danger alert-dismissible fade in'>");
+              $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                  .append("</button>");
+              $('#success > .alert-danger').append("<strong>" + (firstName || "Посетитель") + "</strong>, к сожалению, сервис временно недоступен. Пожалуйста, попробуйте позже.");
+              $('#success > .alert-danger').append('</div>');
+              this.startCleaner();
+            },
+            startCleaner: function() {
+              cleanerId = setInterval(function(){
+                //clear all fields
+                $('form').eq(0).trigger("reset");
+                $('.alert').alert('close');
+                clearInterval(cleanerId);
+              }, 5000);
+            }
+          })
+        }
       });
 
     </script>
