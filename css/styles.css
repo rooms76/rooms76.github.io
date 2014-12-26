@@ -276,22 +276,33 @@ span.cp-big {
 #process {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     color: rgb(131, 31, 43);
     font-weight: bold;
     background-color: #eee;
     padding: 2% 0;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
     text-align: center;
+    font-family: 'Neucha';
+    font-size: 18px;
 }
 #process > .point {
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #process > .happy {
     width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #process > .arrow {
     width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #process img {
     width: 50%;
@@ -299,28 +310,35 @@ span.cp-big {
 #for-who {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
-    color: rgb(131, 31, 43);
+    align-items: flex-start;
+    color: rgb(5, 166, 117);
     font-weight: bold;
+    font-size: 18px;
     background-color: #fcfcfc;
     padding: 2% 0;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
     text-align: center;
+    font-family: 'Neucha';
 }
 #for-who > .point {
     width: 30%;
 }
 #for-who img {
-    width: 70%;
+    width: 50%;
 }
 #for-who > .point > img.family {
-    width: 90%;
+    width: 50%;
 }
 #for-who > .point > img.friends {
     width: 50%;
 }
 #for-who > .point > p {
     padding-top: 5%;
+}
+#for-who > .point > p:nth-of-type(2) {
+    font-size: 16px;
+    color: rgb(131, 31, 43);
+    font-weight: normal;
 }
 #rules {
     margin-bottom: 5%;
