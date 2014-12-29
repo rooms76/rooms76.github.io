@@ -343,7 +343,7 @@ span.cp-big {
 #rules {
     margin-bottom: 5%;
 }
-#rules iframe {
+#rules video {
     width: 100%;
 }
 #participants {
@@ -362,7 +362,10 @@ span.cp-big {
     text-align: center;
     margin-bottom: 40px;
 }
-
+#participants iframe {
+    width: 100%;
+    margin-top: 5%;
+}
 #contacts {
     color: #333;
     background-color: #fcfcfc;

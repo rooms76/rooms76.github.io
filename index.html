@@ -81,7 +81,10 @@
 
         <div id="rules" class="row wow bounceInLeft" data-wow-duration="1.5s">
           <div class="col-md-8 col-md-offset-2" >
-            <iframe src="http://vk.com/video_ext.php?oid=241326714&id=170742404&hash=0c7cd3dc0ab98149&hd=2" width="607" height="360" frameborder="0"></iframe>
+            <video id="promo-video" poster="./video/room-of-grandfather.jpg"
+                   controls="controls" muted="muted" autoplay="autoplay" loop="loop">
+              <source src="./video/room-of-grandfather.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
           </div>
           <!--<div class="col-lg-5 col-md-6">-->
             <!--<p><span class="cp"><a href="http://vk.com/rooms76" target="_blank">RoomS</a></span> - это первое в Ярославле игровое развлечение в жанре “выберись из комнаты”-->
@@ -328,6 +331,12 @@
             <a href="http://vk.com/album-75004909_203159149" class="all" target="_blank">Все участники --></a>
           </div>
 
+          <div class="row wow bounceInRight" data-wow-duration="1.5s">
+            <div class="col-md-8 col-md-offset-2" >
+              <iframe src="http://vk.com/video_ext.php?oid=241326714&id=170742404&hash=0c7cd3dc0ab98149&hd=2" width="607" height="360" frameborder="0"></iframe>
+            </div>
+          </div>
+
         </div><!--<div class="container content">  -->
 
       </div>
@@ -523,7 +532,6 @@
         navigation : false,
         pagination :  true
       });
-
 
       $("input").not("[type=submit]").jqBootstrapValidation({
         preventSubmit: true,
