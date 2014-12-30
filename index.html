@@ -82,7 +82,7 @@
         <div id="rules" class="row wow bounceInLeft" data-wow-duration="1.5s">
           <div class="col-md-8 col-md-offset-2" >
             <video id="promo-video" poster="./video/room-of-grandfather.jpg"
-                   controls="controls" muted="muted" autoplay="autoplay" loop="loop">
+                   controls="controls" muted="muted" loop="loop">
               <source src="./video/room-of-grandfather.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
           </div>
@@ -382,8 +382,8 @@
                 <h4 class="modal-title" id="callModalLabel">Заказать звонок</h4>
               </div>
               <div class="modal-body">
-                <form role="form" method="POST" action="">
-                  <input type="text" value="rooms76.hithub.io" name="hostname" hidden="hidden">
+                <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail">
+                  <input type="text" value="rooms76.com" name="hostname" hidden="hidden">
                   <div class="form-group">
                     <label for="name">Ваше имя</label>
                     <input type="text" class="form-control" id="name" name="name"
@@ -540,7 +540,7 @@
           $('#callModal').modal('hide');
         },
         submitSuccess: function($form, event) {
-          event.preventDefault(); // prevent default submit behaviour
+          //event.preventDefault(); // prevent default submit behaviour
           $('#callModal').modal('hide');
           // get values from FORM
           var cleanerId = 0;
@@ -552,7 +552,7 @@
           if (firstName.indexOf(' ') >= 0) {
             firstName = name.split(' ').slice(0, -1).join(' ');
           }
-          $.ajax({
+          /*$.ajax({
             url: $('form').eq(0).attr('action') || '#',
             type: "POST",
             data: {
@@ -589,7 +589,7 @@
                 clearInterval(cleanerId);
               }, 5000);
             }
-          })
+          })*/
         }
       });
 
