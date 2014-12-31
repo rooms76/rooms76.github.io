@@ -503,12 +503,26 @@ span.cp-big {
     span.cp-big {
         font-size: 100px;
     }
+    #process p {
+        font-size: 14px;
+    }
+    #for-who > .point > p {
+        font-size: 14px;
+    }
+    #for-who > .point > p:nth-of-type(2) {
+        font-size: 14px;
+    }
 }
-
 
 @media only screen and (max-width: 350px) {
     .top-phone {
         font-size: 14px;
         padding: 6px 5px;
+    }
+    #for-who > .point > p {
+        font-size: 12px;
+    }
+    #for-who > .point > p:nth-of-type(2) {
+        font-size: 11px;
     }
 }
