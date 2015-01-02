@@ -274,6 +274,10 @@ span.cp-big {
     border-top: 1px dashed #333;
 }
 #process {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-around;
     align-items: stretch;
@@ -283,23 +287,35 @@ span.cp-big {
     padding: 2% 0;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
     text-align: center;
-    font-family: 'Neucha';
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
 }
 #process > .point {
     width: 20%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 #process > .happy {
     width: 23%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 #process > .arrow {
     width: 10%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,17 +324,21 @@ span.cp-big {
     width: 50%;
 }
 #for-who {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    color: rgb(5, 166, 117);
+    color: #05a675;
     font-weight: bold;
     font-size: 18px;
     background-color: #fcfcfc;
     padding: 2% 0;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
     text-align: center;
-    font-family: 'Neucha';
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #for-who > .point {
     width: 30%;
@@ -362,9 +382,14 @@ span.cp-big {
     text-align: center;
     margin-bottom: 40px;
 }
+#participants .video-title {
+    font-size: 20px;
+    color: #05a675;
+    margin-top: 2%;
+}
 #participants iframe {
     width: 100%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 #contacts {
     color: #333;
