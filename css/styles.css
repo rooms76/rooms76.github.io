@@ -373,7 +373,8 @@ span.cp-big {
     margin-bottom: 20%;
 }
 #participants a.all {
-    font-size: 20px;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
     font-weight: bold;
     margin-left: 1%;
 }
@@ -383,7 +384,9 @@ span.cp-big {
     margin-bottom: 40px;
 }
 #participants .video-title {
-    font-size: 20px;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 30px;
     color: #05a675;
     margin-top: 2%;
 }
@@ -516,6 +519,17 @@ span.cp-big {
     #rooms a.booking.more {
         padding: 2% 10%;
     }
+    #rooms .rooms-overlay {
+        left: 0;
+        right: 0;
+    }
+    #participants a.all.link {
+        margin-left: 10%;
+    }
+    #rooms .relative {
+        padding: 0;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -549,5 +563,17 @@ span.cp-big {
     }
     #for-who > .point > p:nth-of-type(2) {
         font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 295px) {
+    .top-phone {
+        top: -3px;
+    }
+    #process p {
+        font-size: 12px;
+    }
+    #participants img {
+        margin-bottom: 5%;
     }
 }
