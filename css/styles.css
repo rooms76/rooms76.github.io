@@ -47,6 +47,13 @@ span.cp-big {
 .text-center {
     text-align: center;
 }
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
 @media only screen and (min-width: 768px) {
     .navbar-default {
         padding: 25px 0;
@@ -217,6 +224,14 @@ span.cp-big {
 #rooms .rooms-overlay > span {
     color: #fff;
     position: absolute;
+}
+#rooms .rooms-overlay > span.quest-type {
+    top: 2%;
+    left: 10%;
+    background-color: #fff;
+    color: #333;
+    line-height: 95%;
+    padding: 0 1%;
 }
 #rooms .rooms-overlay > span.title {
     top: 40%;
@@ -495,6 +510,9 @@ span.cp-big {
     .offer {
         margin-bottom: 40px;
     }
+    #rooms .rooms-overlay {
+        font-size: 12px;
+    }
     #rooms a.booking {
         padding: 0% 5%;
     }
@@ -522,6 +540,7 @@ span.cp-big {
     #rooms .rooms-overlay {
         left: 0;
         right: 0;
+        font-size: 14px;
     }
     #participants a.all.link {
         margin-left: 10%;
