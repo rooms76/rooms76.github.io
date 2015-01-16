@@ -289,13 +289,6 @@ span.cp-big {
     border-top: 1px dashed #333;
 }
 #process {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
     color: rgb(131, 31, 43);
     font-weight: bold;
     background-color: #eee;
@@ -305,47 +298,13 @@ span.cp-big {
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
 }
-#process > .point {
-    width: 20%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-#process > .happy {
-    width: 23%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 #process > .arrow {
-    width: 10%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 11%;
 }
 #process img {
     width: 50%;
 }
 #for-who {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
     color: #05a675;
     font-weight: bold;
     font-size: 18px;
@@ -355,16 +314,7 @@ span.cp-big {
     text-align: center;
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-#for-who > .point {
-    width: 30%;
-}
 #for-who img {
-    width: 50%;
-}
-#for-who > .point > img.family {
-    width: 50%;
-}
-#for-who > .point > img.friends {
     width: 50%;
 }
 #for-who > .point > p {
@@ -571,7 +521,11 @@ span.cp-big {
         font-size: 14px;
     }
 }
-
+@media only screen and (max-width: 370px) {
+    .col-xs-offset-2 {
+        margin-left: 0;
+    }
+}
 @media only screen and (max-width: 350px) {
     .top-phone {
         font-size: 14px;
