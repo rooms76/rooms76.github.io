@@ -118,7 +118,7 @@
                 <span class="age-limit">16+</span>
                 <span class="title">Квест: "Кабинет деда"</span>
                 <span class="cost">Цена: 1000-1200 р. / с команды</span>
-                <a href="#contacts" class="booking page-scroll">Забронировать!</a>
+                <a href="#schedule" class="booking page-scroll room-select" data-room="1">Забронировать!</a>
                 <a class="booking more" data-toggle="modal" data-target="#gfModal"> ... </a>
               </div>
             </div>
@@ -177,7 +177,7 @@
                 <span class="title">Квест: "Сон"</span>
                 <span class="cost">Цена: 500 р. / чел.</span>
                 <span class="bonus">Чай, кофе, печеньки inclusive</span>
-                <a href="#contacts" class="booking page-scroll">Забронировать!</a>
+                <a href="#schedule" class="booking page-scroll room-select" data-room="2">Забронировать!</a>
                 <a class="booking more" data-toggle="modal" data-target="#cohModal"> ... </a>
               </div>
             </div>
@@ -235,13 +235,31 @@
                 <span class="age-limit">18+</span>
                 <span class="title">Квест: "Морозильная&nbsp;камера"</span>
                 <span class="cost">Цена: 1500 р.</span>
-                <a href="#" class="booking page-scroll">Открытие в январе ...</a>
+                <a href="#schedule" class="booking page-scroll room-select" data-room="3">Открытие в январе ...</a>
               </div>
             </div>
 
           </div>
 
-          <iframe src="http://rooms-booking-system-batishchev.c9.io/schedule.html" width="100%" height="450px"></iframe>
+          <ul class="nav nav-tabs nav-justified">
+            <li role="presentation" class="active" data-room="1">
+              <a href="http://rooms-booking-system-batishchev.c9.io/schedule.html?room=1" class="room-select" data-room="1">
+                "Кабинет деда"
+              </a>
+            </li>
+            <li role="presentation" class="" data-room="2">
+              <a href="http://rooms-booking-system-batishchev.c9.io/schedule.html?room=2" class="room-select" data-room="2">
+                BIG QUEST. СОН
+              </a>
+            </li>
+            <li role="presentation" class="" data-room="3">
+              <a href="http://rooms-booking-system-batishchev.c9.io/schedule.html?room=3" class="room-select" data-room="3">
+                "Морозильная&nbsp;камера"
+              </a>
+            </li>
+          </ul>
+
+          <iframe id="schedule" src="http://rooms-booking-system-batishchev.c9.io/schedule.html" width="100%" height="650px"></iframe>
 
         </div><!--<div class="container content">-->
 
@@ -493,7 +511,7 @@
 
             if(this_pos >= 0 && this_pos < 300) {
               var nav_li = $('[href="#'+this_id+'"]').parent('li');
-              $('.nav li.active').removeClass('active');
+              $('.nav.navbar-nav li.active').removeClass('active');
               nav_li.addClass('active');
 
               if(window.location.hash != '#'+this_id) {
@@ -534,6 +552,17 @@
       // Closes the Responsive Menu on Menu Item Click
       $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
+      });
+
+      $('.room-select').on('click', function(event) {
+        event.preventDefault();
+        var a = $(this);
+        var room_id = a.attr('data-room');
+        var url = 'http://rooms-booking-system-batishchev.c9.io/schedule.html?room=' + room_id;
+        var nav_li = $('li[data-room="'+room_id+'"]');
+        $('.nav.nav-tabs li.active').removeClass('active');
+        nav_li.addClass('active');
+        $('iframe#schedule').attr('src', url);
       });
 
       // Сarousel
