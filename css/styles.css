@@ -332,7 +332,7 @@ span.cp-big {
     width: 100%;
 }
 #participants {
-    padding: 7% 0;
+    padding: 7% 0 3%;
 }
 #participants img {
     margin-bottom: 20%;
@@ -379,7 +379,30 @@ span.cp-big {
 #participants {
     min-height: 200px;
 }
-
+.description {
+    margin: 1%;
+    color: #555;
+}
+.description h2 {
+    color: #555;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 26px;
+}
+.description a{
+    color: #ff6666;
+    color: #f55674;
+    text-decoration: none;
+}
+.description span.cp > a{
+    color: #993333;
+    color: #831F2B;
+    font-size: 31px;
+}
+.description a:hover,
+.description a:focus{
+    color: #993333;
+    color: #831F2B;
+}
 #map {
     height: 400px;
     width: 100%;
