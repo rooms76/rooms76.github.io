@@ -247,17 +247,17 @@
 
           <ul class="nav nav-tabs nav-justified">
             <li role="presentation" class="active" data-room="1">
-              <a href="http://rooms-booking-system-batishchev.c9.io/schedule.html?room=1" class="room-select" data-room="1">
+              <a href="http://rooms-booking-system.herokuapp.com/schedule.html?room=1" class="room-select" data-room="1">
                 "Кабинет деда"
               </a>
             </li>
             <li role="presentation" class="" data-room="2">
-              <a href="http://rooms-booking-system-batishchev.c9.io/schedule.html?room=2" class="room-select" data-room="2">
+              <a href="http://rooms-booking-system.herokuapp.com/schedule.html?room=2" class="room-select" data-room="2">
                 BIG QUEST. СОН
               </a>
             </li>
             <li role="presentation" class="" data-room="3">
-              <a href="http://rooms-booking-system-batishchev.c9.io/schedule.html?room=3" class="room-select" data-room="3">
+              <a href="http://rooms-booking-system.herokuapp.com/schedule.html?room=3" class="room-select" data-room="3">
                 "Морозильная&nbsp;камера"
               </a>
             </li>
@@ -576,7 +576,7 @@
         event.preventDefault();
         var a = $(this);
         var room_id = a.attr('data-room');
-        var url = 'http://rooms-booking-system-batishchev.c9.io/schedule.html?room=' + room_id;
+        var url = 'http://rooms-booking-system.herokuapp.com/schedule.html?room=' + room_id;
         var nav_li = $('li[data-room="'+room_id+'"]');
         $('.nav.nav-tabs li.active').removeClass('active');
         nav_li.addClass('active');
