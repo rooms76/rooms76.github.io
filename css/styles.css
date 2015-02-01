@@ -88,8 +88,7 @@ span.cp-big {
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 25px;
 }
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:hover {
     color: #f55674;
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 25px;
