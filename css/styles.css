@@ -468,6 +468,27 @@ span.cp-big {
     text-align: center;
     background-color: #fcfcfc;
 }
+/*=========================CITY SELECTOR===========================*/
+.city-overlay {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    right: 3%;
+    bottom: 6%;
+}
+.city-overlay > span.city-title {
+    color: #fff;
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+#rooms h2.select-city-title {
+    color: #f55674;
+}
 /*=========================RESPONSIVE LAYOUTS===========================*/
 
 @media only screen and (max-width: 995px) {
@@ -541,6 +562,9 @@ span.cp-big {
     }
     #for-who > .point > p:nth-of-type(2) {
         font-size: 14px;
+    }
+    .city-overlay > span.city-title {
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 370px) {
