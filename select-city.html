@@ -85,7 +85,7 @@
             </div>
 
             <div class="col-xs-6 col-sm-4 col-sm-offset-2 relative wow bounceInRight" data-wow-duration="0.5s">
-              <a href="index.html">
+              <a href="index.html" class="city-is-selected" data-city="yaroslavl">
                 <img src="images/yaroslavl.jpg">
                 <div class="city-overlay">
                   <span class="city-title">Ярославль</span>
@@ -96,7 +96,7 @@
 
 
             <div class="col-xs-6 col-sm-4 relative wow bounceInRight" data-wow-duration="1.0s">
-              <a href="./kostroma/index.html">
+              <a href="./kostroma/index.html" class="city-is-selected" data-city="kostroma">
                 <img src="images/kostroma.jpg">
                 <div class="city-overlay">
                   <span class="city-title">Кострома</span>
@@ -191,6 +191,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/cookie.js"></script>
     <script>
 
       var wow = new WOW().init();
@@ -218,6 +219,26 @@
           //scrollNav = false;
           //$(document).trigger('scroll');
         });
+      });
+
+      $('.city-is-selected').on('click', function(event) {
+        var city = $(this).data('city');
+        var date = new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000);
+        if('kostroma' == city) {
+          setCookie('city', 'kostroma',{ path:'/', expires: date.toUTCString() });
+        } else {
+          setCookie('city', 'yaroslavl',{ path:'/', expires: date.toUTCString() });
+        }
+      });
+
+      $(document).ready(function() {
+          var city = getCookie('city');
+          if(!city) return;
+          if('kostroma' == city) {
+              window.location.replace('./kostroma/index.html');
+          } else if('yaroslavl' == city) {
+              window.location.replace('./index.html');
+          }
       });
 
       // Closes the Responsive Menu on Menu Item Click

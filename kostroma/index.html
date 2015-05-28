@@ -44,7 +44,9 @@
               <span class="top-phone">+7 930 387-42-37</span>
           </div>
           <div class="pull-right hidden-md hidden-lg">
-            <span class="city-select-xs hidden-sm"><a href="#"><i class="icon-map-marker"></i>&nbsp;Кострома</a></span>
+            <span class="city-select-xs hidden-sm">
+                <a href="../select-city.html" class="select-another-city"><i class="icon-map-marker"></i>&nbsp;Кострома</a>
+            </span>
           </div>
 
         </div>
@@ -74,7 +76,7 @@
 
       <div class="container content">
           <div class="city-select-item">
-              <a href="#">
+              <a href="../select-city.html" class="select-another-city">
                 <span class="icon-stack icon-2x">
                   <i class="icon-map-marker"></i>
                 </span>
@@ -531,6 +533,7 @@
     <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script src="../kostroma/js/script.js"></script>
+    <script src="../js/cookie.js"></script>
     <script>
 
       var wow = new WOW().init();
@@ -574,6 +577,10 @@
         $('.nav.nav-tabs li.active').removeClass('active');
         nav_li.addClass('active');
         $('iframe#schedule').attr('src', url);
+      });
+
+      $('.select-another-city').on('click', function(event) {
+          setCookie('city', '',{ path:'/', expires: -1 });
       });
 
       // Сarousel
