@@ -399,6 +399,31 @@ span.cp-big {
     width: 100%;
     margin-top: 2%;
 }
+#partners {
+    padding: 1% 0 3%;
+}
+#partners img {
+    margin-bottom: 20%;
+}
+#partners a.all {
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 1%;
+}
+#partners h2 {
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#partners .section-header {
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #05a675;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 #contacts {
     color: #333;
     background-color: #fcfcfc;
