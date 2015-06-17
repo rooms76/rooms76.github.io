@@ -482,6 +482,9 @@ span.cp-big {
 #footer hr {
     border-top: 1px solid #333;
 }
+#footer h5 {
+    font-weight: bold;
+}
 #footer span.cp {
     color: #841e2b;
     font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
