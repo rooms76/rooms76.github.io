@@ -1,0 +1,317 @@
+/* latin */
+@font-face {
+    font-family: 'Avenida';
+    font-style: normal;
+    font-weight: 400;
+    src: local('avenida'), url('../../fonts/avenida.woff') format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Neucha'), url(../../fonts/neucha-c.woff2) format('woff2'),
+    local('Neucha'), url(../../fonts/neucha.ttf) format('truetype'),
+    local('Neucha'), url(../../fonts/neucha.eot) format('embedded-opentype');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Neucha'), url(../../fonts/neucha.woff2) format('woff2'),
+    local('Neucha'), url(../../fonts/neucha.ttf) format('truetype'),
+    local('Neucha'), url(../../fonts/neucha.eot) format('embedded-opentype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+    font-family: 'newSlendermanswriting';
+    font-style: normal;
+    font-weight: 400;
+    src: local('newSlendermanswriting'), url('../../fonts/newSlendermanswriting.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body{
+  min-height: 100%; 
+  font-family: verdana, sans-serif;
+  background: #0C0C0C url("../../images/wall-inv.jpg");
+  background-size: 40%;
+}
+span.cp {
+    color: #831f2b;
+    font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 25px;
+}
+span.cp-big {
+    color: #831f2b;
+    font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 200px;
+    text-shadow: 20px 20px 20px #333;
+}
+.text-center {
+    text-align: center;
+}
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+@media only screen and (min-width: 768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        -o-transition: padding .3s;
+        transition: padding .3s;
+    }
+}
+.navbar-default {
+    background: url('../../images/slenderman.jpg');
+    padding-bottom: 37%;
+    border-color: transparent;
+    background-size: cover;
+    box-shadow: 0 69px 65px 0 rgba(0,0,0,.62), 0 20px 30px 0px rgba(0,0,0,0.82);
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #f55674;
+    background-color: transparent;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #831f2b;
+}
+.navbar-default .navbar-brand {
+    font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #831f2b;
+    font-size: 45px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #555;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 25px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #f55674;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 25px;
+}
+.navbar-shrink {
+    background-color: #fcfcfc;
+    border-bottom: 2px solid #f55674;
+    padding: 0;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
+}
+.navbar-shrink .navbar-brand {
+    font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #831f2b;
+    font-size: 45px;
+    background-image: url("../../images/logo-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100%;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+div.main-title {
+    position: absolute;
+    color: #fff;
+    padding-top: 15%;
+    width: 100%;
+}
+.main-title h1 {
+
+    font-family: newSlendermanswriting;
+    font-size: 140px;
+
+}
+.main-title h3 {
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.navbar-shrink .city-select-item{
+    display: none;
+}
+
+.top-phone {
+    color: #831f2b;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 35px;
+    padding: 6px 15px;
+}
+.content p {
+    color: #333;
+    font-size: 17px;
+    text-indent: 30px;
+    text-align: justify;
+}
+.content a {
+    color: #f55674;
+    text-decoration: none;
+}
+.content hr {
+    border-top: 1px solid #f55674;
+    margin: 50px 15px;
+}
+.content img {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
+    margin-bottom: 5%;
+}
+.offer {
+    margin: 7% 0;
+    color: #555;
+}
+.offer h1 {
+    color: #ccc;
+    font-size: 45px;
+    background-image: url(../../images/stripes.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.offer h2 {
+    color: #fff;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 31px;
+}
+
+#footer {
+    min-height: 200px;
+    color: #fff;
+    background-size: cover;
+}
+#footer hr {
+    border-top: 1px solid #333;
+}
+#footer h5 {
+    font-weight: bold;
+}
+#footer span.cp {
+    color: #841e2b;
+    font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+}
+#footer .secret-word {
+    font-size: 14px;
+    position: relative;
+    top: 25px;
+}
+#footer .secret-word>span {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0px 0px 40px #fff;
+    color: #111;
+}
+.icon {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+.footer-icon {
+    top: 8px;
+    position: relative;
+}
+.list-inline {
+    margin:-5px;
+    padding: 15px;
+}
+.list-inline li {
+    padding:0 5px;
+    display:inline-block
+}
+.list-inline li a {
+    text-decoration: none;
+    color: #555;
+}
+.list-inline li a:hover,
+.list-inline li a:focus {
+    text-decoration: none;
+    color: #841e2b;
+}
+.footer-icon-container {
+    display: block;
+    height: 36px;
+    width: 36px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #fcfcfc;
+}
+/*=========================RESPONSIVE LAYOUTS===========================*/
+
+@media only screen and (max-width: 995px) {
+    .top-phone {
+        font-size: 20px;
+        position: relative;
+        top: 8px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        padding: 10px;
+    }
+    .main-title h1 {
+        font-size: 119px;
+    }
+    .main-title h3 {
+        font-size: 22px;
+    }
+    .offer {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-default {
+        background-color: #fff;
+    }
+    .navbar-shrink {
+        padding: 0px 0;
+    }
+    .main-title h1 {
+        font-size: 86px;
+    }
+    .main-title h3 {
+        font-size: 16px;
+    }
+    span.cp-big {
+        font-size: 150px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .top-phone {
+        font-size: 20px;
+        padding: 6px 5px;
+        position: relative;
+        top: 12px;
+    }
+    div.main-title {
+        padding-top: 0;
+    }
+    span.cp-big {
+        font-size: 100px;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .col-xs-offset-2 {
+        margin-left: 0;
+    }
+    .main-title h1 {
+        font-size: 60px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .top-phone {
+        font-size: 14px;
+        padding: 6px 5px;
+    }
+}
