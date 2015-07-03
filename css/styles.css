@@ -449,6 +449,22 @@ span.cp-big {
     margin-top: 2%;
     margin-bottom: 2%;
 }
+#certificates .section-header {
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #05a675;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#certificates span.cert-price {
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #f55674;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 #contacts {
     color: #333;
     background-color: #fcfcfc;
