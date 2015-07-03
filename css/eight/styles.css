@@ -88,11 +88,11 @@ span.cp-big {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #831f2b;
+    color: #fff;
 }
 .navbar-default .navbar-brand {
     font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #831f2b;
+    color: #fff;
     font-size: 45px;
 }
 .navbar-default .navbar-nav>li>a {
@@ -113,7 +113,7 @@ span.cp-big {
 }
 .navbar-shrink .navbar-brand {
     font-family: 'Avenida',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #831f2b;
+    color: #fff;
     font-size: 45px;
     background-image: url("../../images/logo-bg.jpg");
     background-repeat: no-repeat;
@@ -132,17 +132,20 @@ div.main-title {
 
     font-family: newSlendermanswriting;
     font-size: 140px;
+    margin-bottom: 0;
 
 }
 .main-title h3 {
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 32px;
+    margin-top: 5px;
 }
 .navbar-shrink .city-select-item{
     display: none;
 }
 
 .top-phone {
-    color: #831f2b;
+    color: #fff;
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 35px;
     padding: 6px 15px;
@@ -263,7 +266,7 @@ div.main-title {
         font-size: 119px;
     }
     .main-title h3 {
-        font-size: 22px;
+        font-size: 26px;
     }
     .offer {
         margin-bottom: 40px;
