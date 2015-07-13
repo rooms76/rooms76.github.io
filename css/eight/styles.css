@@ -161,7 +161,7 @@ div.main-title {
     text-decoration: none;
 }
 .content hr {
-    border-top: 1px solid #f55674;
+    border-top: 1px dashed #fff;
     margin: 50px 15px;
 }
 .content img {
