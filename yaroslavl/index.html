@@ -72,6 +72,13 @@
       <a data-toggle="modal" data-target="#callModal"><img src="../images/phone-fly.png"></a>
     </div>
 
+    <div class="slender wow bounceInLeft" data-wow-duration="2.0s" data-wow-delay="4s">
+      <a href="./eight.html">
+        <button id="close-slender" type="button" class="close">×</button>
+        <span>НЕ ЖМИ СЮДА!</span>
+        <img src="../images/slender.png"></a>
+    </div>
+
     <div class="container-fluid">
 
       <div class="container content">
@@ -692,7 +699,12 @@
       });
 
       $('.select-another-city').on('click', function(event) {
-          setCookie('city', '',{ path:'/', expires: -1 });
+        setCookie('city', '',{ path:'/', expires: -1 });
+      });
+
+      $('#close-slender').on('click', function(event) {
+        event.preventDefault();
+        $('.slender').css('display', 'none');
       });
 
       // Сarousel
