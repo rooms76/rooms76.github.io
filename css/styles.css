@@ -257,6 +257,13 @@ span.cp-big {
 #rooms .relative:hover .rooms-overlay {
     display: block;
 }
+#rooms img.promo {
+    position: absolute;
+    width: 40%;
+    top: 4px;
+    right: 18px;
+    box-shadow: none;
+}
 #rooms .rooms-overlay {
     background-color: rgba(0,0,0,.7);
     position: absolute;
