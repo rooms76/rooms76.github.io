@@ -91,7 +91,6 @@ span.cp-big {
 .navbar-default .navbar-nav>li>a:hover {
     color: #f55674;
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 25px;
 }
 .navbar-shrink {
     background-color: #fcfcfc;
@@ -403,6 +402,31 @@ span.cp-big {
 #rules video {
     width: 100%;
 }
+#organization {
+    margin: 1%;
+    color: #555;
+}
+#organization .section-header {
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #05a675;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#organization a {
+    color: #ff6666;
+    color: #f55674;
+    text-decoration: none;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+#organization h2 {
+    color: #555;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 26px;
+}
 #participants {
     padding: 7% 0 3%;
 }
@@ -616,6 +640,8 @@ span.cp-big {
     }
     .navbar-default .navbar-nav>li>a {
         padding: 10px;
+        font-size: 21px;
+        font-weight: bold;
     }
     .offer {
         margin-bottom: 40px;
