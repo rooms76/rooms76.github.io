@@ -52,7 +52,7 @@
 
             <li><a href="#rooms" class="page-scroll">Организациям</a></li>
             <li><a href="#reviews" class="page-scroll">Отзывы</a></li>
-            <li><a href="#contacts" class="page-scroll">Контакты</a></li>
+            <li><a href="#contacts" class="page-scroll">Заказать квест сейчас</a></li>
           </ul>
 
         </div><!--/.nav-collapse -->
@@ -97,7 +97,7 @@
           <br>
 
           <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-2">
-            <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail" class="form-inline">
+            <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail" class="form-inline gratitable">
               <input type="text" value="rooms76.com" name="hostname" hidden="hidden">
               <input type="text" value="Получить презентацию" name="goal" hidden="hidden">
               <div class="form-group">
@@ -226,7 +226,8 @@
         <div class="container content">
 
           <div class="col-sm-4 well">
-            <h3 class="text-center">Мини-квест "Ночь в музее"</h3>
+            <h3 class="text-center">Мини-квест "Ночь в музее"
+              <span class="hidden-sm"><br>&nbsp;</span></h3>
             <img src="../images/reviews/sweet_pepper.jpg">
             <h4>Примышев Юрий Николаевич,<br>
               директор и владелец бара Sweet Pepper</h4>
@@ -239,6 +240,35 @@
             <a href="http://geometria.ru/places/sweetpepper/events/864715">Фотоотчет с мероприятия</a>
           </div>
 
+          <div class="col-sm-4 well">
+            <h3 class="text-center">Мини-квест "Новогодний"
+              <span class="hidden-sm"><br>&nbsp;</span></h3>
+            <img src="../images/reviews/our_theatre.jpg">
+            <h4>Наталья Штефан,<br>
+              режиссер и руководитель студии актерского мастерства "Наш театр"</h4>
+            <p>Хочется отметить нестандартность подхода организаторов к заданиям:
+              сюрпризы, трюки, неожиданности будут поджидать вас на каждом шагу квеста.
+              Скучать точно не придется! Рекомендую всем, кому хочется получить новых позитивных впечатлений!</p>
+          </div>
+
+          <div class="col-sm-4 well">
+            <h3 class="text-center">Мини-квест "История одного стрелочника"</h3>
+            <img src="../images/reviews/rzdstroy.jpg">
+            <h4>Олеся Кравец,<br>
+              Строительно-монтажный трест №5-филиал АО "РЖДстрой"</h4>
+            <p>7 августа 2015 года Строительно-монтажный трест №5-филиал АО
+              "РЖДстрой" отпраздновал профессиональный праздник День строителя,
+              одним из сюрпризов от ППО СМТ №5 был прохождение квеста. Квест был
+              организован на нашей территории, сценарий был написан исключительно
+              под нас, за что хочется выразить просто огрооменное спасибо Екатерине
+              Чернышовой, она дважды приезжала к нам в организации, смотрела помещения,
+              очень ответственно отнеслась ко всему) Так же спасибо ребятам актерам,
+              которые умело пугали наших коллег) Ну и конечно для нас было большой радостью,
+              что мы получили еще и призы . Спасибо Вам огромное, это был наш первый опыт,
+              но теперь уверена что далеко не последний)))И кстати рабочее утро сегодня началось,
+              как раз с обсуждения квеста, все коллеги остались очень довольны)</p>
+          </div>
+
         </div> <!-- </div class="container content"> -->
 
       </div> <!-- </div id="reviews" class="row"> -->
@@ -247,14 +277,15 @@
 
         <div class="row" data-wow-duration="1.5s">
           <div class="col-xs-12">
-            <div class="section-header text-center">Контакты</div>
+            <div class="section-header text-center">Заказать квест сейчас</div>
           </div>
         </div>
 
         <div class="container content">
-          <div class="col-sm-offset-4 col-sm-4 jumbotron">
-            <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail">
+          <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-2">
+            <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail" class="form-inline gratitable">
               <input type="text" value="rooms76.com" name="hostname" hidden="hidden">
+              <input type="text" value="Выездной квест" name="goal" hidden="hidden">
               <div class="form-group">
                 <input type="text" class="form-control" id="name" name="name"
                        placeholder="Ваше имя"
@@ -273,13 +304,31 @@
                        maxlength="128" required=""
                        data-validation-required-message="Введите свой e-mail." aria-invalid="true">
               </div>
-              <div class="form-group">
-                <textarea name="message" class="form-control" rows="4" placeholder="Комментарий"></textarea>
-              </div>
               <button type="submit" class="btn btn-nice">Отправить</button>
             </form>
           </div>
         </div> <!-- </div class="container content"> -->
+
+        <!-- Modal success -->
+        <div class="modal fade bs-example-modal-sm" id="gratitudeDialog" data-id="" tabindex="-1" role="dialog"
+             aria-labelledby="gameBookingSuccessModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="adminDelModalLabel">Заявка отправлена</h4>
+              </div>
+              <div class="modal-body">
+                <p>Наш менеджер свяжется с Вами.</p>
+                <p>Спасибо, что выбрали нас:)</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Ок</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Modal -->
           
       </div> <!-- </div id="contacts" class="row"> -->
 
@@ -382,6 +431,10 @@
       $('#close-slender').on('click', function(event) {
         event.preventDefault();
         $('.slender').css('display', 'none');
+      });
+
+      $('form.gratitable').on('submit', function(event) {
+        $('#gratitudeDialog').modal('show');
       });
 
       // Сarousel
