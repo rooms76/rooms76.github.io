@@ -316,6 +316,10 @@ form textarea.form-control:focus {
     margin-top: 2%;
     margin-bottom: 2%;
 }
+#reviews .content img {
+    width: 30%;
+    box-shadow: none;
+}
 #reviews div.well {
     background-color: #fff;
 }
