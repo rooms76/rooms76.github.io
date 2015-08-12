@@ -609,6 +609,9 @@ span.cp-big {
     text-align: center;
     background-color: #fcfcfc;
 }
+img.temper-it {
+   width: 153px;
+}
 /*=========================CITY SELECTOR===========================*/
 .city-overlay {
     position: absolute;
