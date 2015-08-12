@@ -406,6 +406,9 @@ form textarea.form-control:focus {
     text-align: center;
     background-color: #fcfcfc;
 }
+img.temper-it {
+    width: 153px;
+}
 /*=========================RESPONSIVE LAYOUTS===========================*/
 
 @media only screen and (max-width: 995px) {
