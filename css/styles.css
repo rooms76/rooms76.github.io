@@ -189,6 +189,14 @@ span.cp-big {
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
     margin-bottom: 5%;
 }
+.section-header {
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #05a675;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 .offer {
     margin: 7% 0 1%;
     color: #555;
