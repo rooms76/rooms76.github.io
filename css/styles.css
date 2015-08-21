@@ -289,16 +289,32 @@ span.cp-big {
     width: 80%;
     height: 30%;
 }
+#rooms .rooms-overlay > ul.locks {
+    top: 60%;
+}
 #rooms .rooms-overlay > ul > li {
     display: inline;
 }
-#rooms .rooms-overlay > ul > li > span {
+#rooms .rooms-overlay > ul > li > span.man {
     background-image: url("../images/man.png");
-    background-size: contain;
+    background-size: 65%;
     background-repeat: no-repeat;
     padding: 10% 5%;
     position: relative;
     top: 40%;
+}
+#rooms .rooms-overlay > ul > li > span.lock {
+    background-image: url("../images/lock-closed-w.png");
+    background-size: 65%;
+    background-repeat: no-repeat;
+    padding: 10% 5%;
+    position: relative;
+    top: 40%;
+}
+#rooms .rooms-overlay > ul > li > span.lock-closed {
+}
+#rooms .rooms-overlay > ul > li > span.lock-opened {
+    background-image: url("../images/lock-opened-w.png");
 }
 #rooms .rooms-overlay > span {
     color: #fff;
@@ -313,11 +329,15 @@ span.cp-big {
     padding: 0 1%;
 }
 #rooms .rooms-overlay > span.title {
-    top: 40%;
+    top: 34%;
     left: 10%;
 }
 #rooms .rooms-overlay > span.cost {
-    top: 50%;
+    top: 44%;
+    left: 10%;
+}
+#rooms .rooms-overlay > span.difficulty {
+    top: 52%;
     left: 10%;
 }
 #rooms .rooms-overlay > span.bonus {
