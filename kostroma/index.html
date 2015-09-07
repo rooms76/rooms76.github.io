@@ -546,6 +546,48 @@
         </div>
         <!-- /Modal -->
 
+        <!-- Modal -->
+        <div class="modal fade bs-example-modal-md" id="unavailableModal" tabindex="-1" role="dialog" aria-labelledby="callModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="unavailableModalLabel">Игры временно не проводятся</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>По техническим причинам игры временно не проводятся.</p>
+                        <p>Приносим свои извинения.</p>
+                        <p>Если вы ОЧЕНЬ хотите в наши квесты, оставьте свои контакты.</p>
+                        <p>Мы перезвоним сразу, как откроемся!</p>
+                        <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail">
+                            <input type="text" value="rooms44.com" name="hostname" hidden="hidden">
+                            <div class="form-group">
+                                <label for="name">Ваше имя*</label>
+                                <input type="text" class="form-control" id="username" name="name"
+                                       maxlength="128" required=""
+                                       data-validation-required-message="Введите свое имя." aria-invalid="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Ваш телефон*</label>
+                                <input type="text" class="form-control" id="userphone" name="phone"
+                                       maxlength="32" required=""
+                                       data-validation-required-message="Введите свой номер телефона." aria-invalid="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Ваш e-mail</label>
+                                <input type="text" class="form-control" id="usermail" name="phone"
+                                       maxlength="32"
+                                       data-validation-required-message="Введите свою почту." aria-invalid="true">
+                            </div>
+                            <p>* - поля, обязательные для заполнения</p>
+                            <button type="submit" class="btn btn-default">Перезвоните мне</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal -->
+
       </div>
 
 
@@ -692,6 +734,7 @@
         }
       });
       $('body').trigger('scroll');
+      $('#unavailableModal').modal('show');
     </script>
 
     <!-- Yandex.Metrika counter -->
