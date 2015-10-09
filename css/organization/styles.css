@@ -143,7 +143,10 @@ form textarea.form-control:focus {
     border-bottom-right-radius: 40px;
     border-top-left-radius: 40px;
 }
-
+form.form-inline-small-padding .col-sm-3 {
+    padding-left: 2px;
+    padding-right: 2px;
+}
 .navbar-shrink .city-select-item{
     display: none;
 }

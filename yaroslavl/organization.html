@@ -61,7 +61,12 @@
 
             <li><a href="#rooms" class="page-scroll">Организациям</a></li>
             <li><a href="#reviews" class="page-scroll">Отзывы</a></li>
-            <li><a href="#contacts" class="page-scroll">Заказать квест сейчас</a></li>
+            <li><a href="#contacts" class="page-scroll wow pulse animated"
+                   data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s"
+                   style="visibility: visible; animation-duration: 2s; -webkit-animation-duration: 2s;
+                   animation-delay: 300ms; -webkit-animation-delay: 300ms; animation-iteration-count: infinite;
+                   -webkit-animation-iteration-count: infinite; animation-name: pulse;
+                   -webkit-animation-name: pulse;">Заказать квест сейчас</a></li>
           </ul>
 
         </div><!--/.nav-collapse -->
@@ -82,7 +87,7 @@
 
       <div id="rooms" class="row">
 
-        <div class="row" data-wow-duration="1.5s">
+        <div class="" data-wow-duration="1.5s">
           <div class="col-xs-12">
             <div class="section-header text-center">ВЫЕЗДНОЙ КВЕСТ</div>
           </div>
@@ -105,29 +110,31 @@
 
           <br>
 
-          <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-2">
-            <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail" class="form-inline gratitable">
+          <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1">
+            <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail" class="form-inline-small-padding gratitable">
               <input type="text" value="rooms76.com" name="hostname" hidden="hidden">
               <input type="text" value="Получить презентацию" name="goal" hidden="hidden">
-              <div class="form-group">
+              <div class="form-group col-sm-3">
                 <input type="text" class="form-control" id="name1" name="name"
                        placeholder="Ваше имя"
                        maxlength="128" required=""
                        data-validation-required-message="Введите свое имя." aria-invalid="true">
               </div>
-              <div class="form-group">
+              <div class="form-group col-sm-3">
                 <input type="text" class="form-control" id="phone1" name="phone"
                        placeholder="Ваш телефон"
                        maxlength="32" required=""
                        data-validation-required-message="Введите свой номер телефона." aria-invalid="true">
               </div>
-              <div class="form-group">
+              <div class="form-group col-sm-3">
                 <input type="text" class="form-control" id="email1" name="phone"
                        placeholder="Ваш e-mail"
                        maxlength="128" required=""
                        data-validation-required-message="Введите свой e-mail." aria-invalid="true">
               </div>
-              <button type="submit" class="btn btn-nice">Получить презентацию</button>
+              <div class="form-group col-sm-3">
+                <button type="submit" class="btn btn-nice">Получить презентацию</button>
+              </div>
             </form>
           </div>
 
@@ -144,7 +151,7 @@
               <i class="fa fa-hourglass-half fa-stack-1x fa-inverse"></i>
             </span>
           </div>
-          <div><p>За 30 минут команда должна разгадать загадки и выбраться из закрытой комнаты</p></div>
+          <div><p>За 30-60 минут команда должна разгадать все загадки квеста</p></div>
         </div>
         <div class="col-xs-4 col-sm-4 point" data-wow-duration="0.6s">
           <div>
@@ -153,7 +160,7 @@
               <i class="fa fa-users fa-stack-1x fa-inverse"></i>
             </span>
           </div>
-          <div><p>Участвуют команды от 4 до 30 человек</p></div>
+          <div><p>Участвуют команды от 4 до 35 человек</p></div>
         </div>
         <div class="col-xs-4 col-sm-4 point" data-wow-duration="1.0s">
           <div>
@@ -169,7 +176,7 @@
 
       <div id="for-who" class="row">
 
-        <div class="row" data-wow-duration="1.5s">
+        <div class="" data-wow-duration="1.5s">
           <div class="col-xs-12">
             <div class="section-header text-center">Квест можно провести в любом месте:</div>
           </div>
@@ -198,7 +205,7 @@
             </div>
             <div class="col-xs-4 col-sm-offset-0 col-sm-4 point wow bounceInRight" data-wow-duration="0.8s">
               <img class="family" src="../images/flower.png" alt="в загородном доме"><br/>
-              <p>в загородном доме</p>
+              <p>за городом</p>
             </div>
             <div class="col-xs-4 col-sm-4 point wow bounceInRight" data-wow-duration="0.8s">
               <img class="family" src="../images/caffe.png" alt="в ресторане/кафе"><br/>
@@ -216,7 +223,7 @@
             </div>
             <div class="col-xs-4 col-sm-4 point wow bounceInRight" data-wow-duration="0.8s">
               <img class="family" src="../images/home.png" alt="у вас дома"><br/>
-              <p>у вас дома</p>
+              <p>у вас дома или на даче</p>
             </div>
 
           </div>
@@ -226,7 +233,7 @@
 
       <div id="reviews" class="row">
 
-        <div class="row" data-wow-duration="1.5s">
+        <div class="" data-wow-duration="1.5s">
           <div class="col-xs-12">
             <div class="section-header text-center">Отзывы</div>
           </div>
@@ -284,7 +291,7 @@
 
       <div id="contacts" class="row">
 
-        <div class="row" data-wow-duration="1.5s">
+        <div class="" data-wow-duration="1.5s">
           <div class="col-xs-12">
             <div class="section-header text-center">Заказать квест сейчас</div>
           </div>
@@ -292,28 +299,30 @@
 
         <div class="container content">
           <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-2">
-            <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail" class="form-inline gratitable">
+            <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail" class="form-inline-small-padding gratitable">
               <input type="text" value="rooms76.com" name="hostname" hidden="hidden">
               <input type="text" value="Выездной квест" name="goal" hidden="hidden">
-              <div class="form-group">
+              <div class="form-group col-sm-3">
                 <input type="text" class="form-control" id="name" name="name"
                        placeholder="Ваше имя"
                        maxlength="128" required=""
                        data-validation-required-message="Введите свое имя." aria-invalid="true">
               </div>
-              <div class="form-group">
+              <div class="form-group col-sm-3">
                 <input type="text" class="form-control" id="phone" name="phone"
                        placeholder="Ваш телефон"
                        maxlength="32" required=""
                        data-validation-required-message="Введите свой номер телефона." aria-invalid="true">
               </div>
-              <div class="form-group">
+              <div class="form-group col-sm-3">
                 <input type="text" class="form-control" id="email" name="phone"
                        placeholder="Ваш e-mail"
                        maxlength="128" required=""
                        data-validation-required-message="Введите свой e-mail." aria-invalid="true">
               </div>
-              <button type="submit" class="btn btn-nice">Отправить</button>
+              <div class="form-group col-sm-3">
+                <button type="submit" class="btn btn-nice">Отправить</button>
+              </div>
             </form>
           </div>
         </div> <!-- </div class="container content"> -->
@@ -362,6 +371,12 @@
                 <li>
                   <a href="http://instagram.com/rooms_76" class="link-contrast footer-icon-container" target="_blank">
                     <i class="icon footer-icon icon-instagram"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.facebook.com/rooms76" class="link-contrast footer-icon-container" target="_blank">
+                    <i class="icon footer-icon icon-facebook"></i>
                   </a>
                 </li>
 
