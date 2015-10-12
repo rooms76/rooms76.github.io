@@ -674,6 +674,10 @@ img.temper-it {
     #rooms a.booking.more {
         right: 2%;
     }
+    #rooms .rooms-overlay {
+        left: 4%;
+        right: 4%;
+    }
 }
 
 @media only screen and (max-width: 995px) {
@@ -692,6 +696,8 @@ img.temper-it {
     }
     #rooms .rooms-overlay {
         font-size: 12px;
+        left: 4%;
+        right: 4%;
     }
     #rooms a.booking {
         padding: 0% 5%;
