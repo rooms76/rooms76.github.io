@@ -441,6 +441,9 @@ img.temper-it {
     #rooms .relative {
         padding: 0;
     }
+    #process > .point {
+        font-size: 80%;
+    }
 
 }
 @media only screen and (max-width: 480px) {
@@ -461,6 +464,9 @@ img.temper-it {
     }
     #for-who > .point > p:nth-of-type(2) {
         font-size: 14px;
+    }
+    #process > .point {
+        font-size: 60%;
     }
 }
 @media only screen and (max-width: 370px) {
@@ -490,5 +496,8 @@ img.temper-it {
     }
     #participants img {
         margin-bottom: 5%;
+    }
+    #process > .point {
+        font-size: 40%;
     }
 }
