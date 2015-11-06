@@ -4,12 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="RoomS - это первое в Ярославле игровое развлечение в жанре “выберись из комнаты”">
     <meta name="keywords" content="rooms, rooms76, квесты ярославль, quest, игра">
-    <meta name="author" content="RoomS - это первое в Ярославле игровое развлечение в жанре “выберись из комнаты”">
+    <meta name="author" content="temper-it.com">
+    <meta name="revisit-after" content="1 days">
     <link rel="icon" href="/images/favicon.ico">
+
+    <meta property="og:title" content="RoomS - квесты в реальности" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://rooms76.com/images/thumbnail.jpg" />
+    <meta property="og:url" content="http://rooms76.com/" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="http://rooms76.com" />
+    <meta property="og:description" content="RoomS - это первое в Ярославле игровое развлечение в жанре “выберись из комнаты”">
     
-    <title>Rooms</title>
+    <title>Rooms | Ярославль</title>
     
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <!-- Bootstrap core CSS -->
@@ -56,9 +65,9 @@
 
           <ul class="nav navbar-nav navbar-right" role="navigation">
 
-            <li><a href="#rules" class="page-scroll">О проекте</a></li>
             <li><a href="#rooms" class="page-scroll">Комнаты</a></li>
-            <li><a href="#participants" class="page-scroll">Участники</a></li>
+            <li><a href="#certificates" class="page-scroll">Сертификаты</a></li>
+            <li><a href="#organization" class="page-scroll">Организациям</a></li>
             <li><a href="#contacts" class="page-scroll">Контакты</a></li>
           </ul>
 
@@ -69,15 +78,17 @@
     <div id="success"></div>
 
     <div class="fly-phone wow pulse" data-wow-duration="2.0s" data-wow-delay="0s">
-      <a data-toggle="modal" data-target="#callModal"><img src="../images/phone-fly.png"></a>
+      <a data-toggle="modal" data-target="#callModal"><img src="../images/phone-fly.png" alt="Перезвоните"></a>
     </div>
 
+    <!--
     <div class="slender wow bounceInLeft" data-wow-duration="2.0s" data-wow-delay="4s">
       <a href="./eight.html">
         <button id="close-slender" type="button" class="close">×</button>
         <span>НЕ ЖМИ СЮДА!</span>
-        <img src="../images/slender.png"></a>
+        <img src="../images/slender.png" alt="Восемь"></a>
     </div>
+    -->
 
     <div class="container-fluid">
 
@@ -95,7 +106,7 @@
         <div class="row">
           <div class="offer col-xs-12 text-center">
             <h1 class="wow fadeInUp" data-wow-duration="1.5s"><span class="cp cp-big">RoomS</span></h1>
-            <h2 class="wow bounceInRight" data-wow-duration="1.5s">У вас всего 60 минут, чтобы выбраться из комнаты!
+            <h2 class="wow bounceInUp" data-wow-duration="1.5s">У вас всего 60 минут, чтобы <strong>выбраться из комнаты</strong>!
               Ключи, коды, пароли, шифры, головоломки, ребусы...
               Ваше главное оружие -
               интеллект, логика и внимательность!</h2>
@@ -125,12 +136,12 @@
 
       <div id="rooms" class="row">
 
-        <div class="container content">
+        <div class="container-fluid content">
 
           <div class="row">
 
-            <div class="col-sm-4 relative wow bounceInRight" data-wow-duration="0.5s">
-              <img src="../images/grandfather.jpg">
+            <div class="col-sm-4 relative wow bounceInLeft" data-wow-duration="0.5s">
+              <img src="../images/grandfather.jpg" alt="Кабинет">
               <div class="rooms-overlay">
                 <ul>
                   <li><span class="man"></span></li>
@@ -139,10 +150,18 @@
                   <li><span class="man"></span></li>
                 </ul>
                 <span class="age-limit">16+</span>
-                <span class="title">Квест: "Кабинет"</span>
-                <span class="cost">Цена: 1000-1200 р. / с команды</span>
+                <span class="title">"Кабинет"</span>
+                <span class="cost">1000-1200 р. / с команды</span>
+                <span class="difficulty">Сложность: для новичков</span>
+                <!--ul class="locks">
+                  <li><span class="lock lock-opened"></span></li>
+                  <li><span class="lock lock-opened"></span></li>
+                  <li><span class="lock lock-opened"></span></li>
+                  <li><span class="lock"></span></li>
+                  <li><span class="lock"></span></li>
+                </ul-->
                 <a href="#schedule" class="booking page-scroll room-select" data-room="1">Забронировать!</a>
-                <a class="booking more" data-toggle="modal" data-target="#gfModal"> ... </a>
+                <a class="booking more" data-toggle="modal" data-target="#gfModal">Подробнее</a>
               </div>
             </div>
 
@@ -159,7 +178,7 @@
                       <div class="row">
 
                         <div class="col-sm-4 col-md-4 col-lg-4">
-                          <img src="../images/grandfather.jpg">
+                          <img src="../images/grandfather.jpg" alt="Кабинет">
                         </div>
 
                         <div class="col-sm-5 col-md-7 col-lg-5">
@@ -167,12 +186,12 @@
                             <li><span>Название квеста: </span><span>"Кабинет"</span></li>
                             <li><span>Возрастные ограничения: </span><span> 16+ </span></li>
                             <li><span>Количество участников: </span><span> от 2 до 4 человек </span></li>
+                            <li><span>Уровень сложности: </span><span> для новичков </span></li>
                             <li>
                               <span>Легенда: </span>
                               <p>У вас объявился родственник. Дед-кладоискатель. За свою долгую жизнь он много путешествовал
                                 и накопил несметные сокровища. И вот, пришло время передать их в наследство.
                                 Тот, кто разгадает все загадки его кабинета и выберется быстрее всех и есть истинный наследник.</p>
-                              <p>Доступное время бронирования игр по акции Biglion: 15:00, 16:15, 17:30, 18:45.</p>
                             </li>
                           </ul>
                         </div>
@@ -185,8 +204,8 @@
             </div>
             <!-- /Modal -->
 
-            <div class="col-sm-4 relative wow bounceInRight" data-wow-duration="1.0s">
-              <img src="../images/coh.jpg">
+            <div class="col-sm-4 relative wow bounceInLeft" data-wow-duration="1.0s">
+              <img src="../images/coh.jpg" alt="Сон">
               <div class="rooms-overlay">
                 <ul>
                   <li><span class="man"></span></li>
@@ -200,11 +219,19 @@
                 </ul>
                 <span class="quest-type">квест-перфоманс</span>
                 <span class="age-limit">18+</span>
-                <span class="title">Квест: "Сон"</span>
-                <span class="cost">Цена: 500 р. / чел.</span>
+                <span class="title">"Сон"</span>
+                <span class="cost">500 р. / чел.</span>
+                <span class="difficulty">Сложность: средняя</span>
+                <!--ul class="locks">
+                  <li><span class="lock lock-opened"></span></li>
+                  <li><span class="lock lock-opened"></span></li>
+                  <li><span class="lock lock-opened"></span></li>
+                  <li><span class="lock lock-opened"></span></li>
+                  <li><span class="lock"></span></li>
+                </ul-->
                 <!--span class="bonus">Чай, кофе, печеньки inclusive</span-->
                 <a href="#schedule" class="booking page-scroll room-select" data-room="2">Забронировать!</a>
-                <a class="booking more" data-toggle="modal" data-target="#cohModal"> ... </a>
+                <a class="booking more" data-toggle="modal" data-target="#cohModal">Подробнее</a>
               </div>
             </div>
 
@@ -221,7 +248,7 @@
                       <div class="row">
 
                         <div class="col-sm-4 col-md-4 col-lg-4">
-                          <img src="../images/coh.jpg">
+                          <img src="../images/coh.jpg" alt="Сон">
                         </div>
 
                         <div class="col-sm-5 col-md-7 col-lg-5">
@@ -229,14 +256,15 @@
                             <li><span>Название квеста: </span><span>"Сон"</span></li>
                             <li><span>Возрастные ограничения: </span><span> 18+ </span></li>
                             <li><span>Количество участников: </span><span> от 6 до 8 человек </span></li>
+                            <li><span>Уровень сложности: </span><span> средний </span></li>
                             <li><span>Стоимость: </span><p> 500 рублей с человека (минимум 3000 рублей)</p></li>
                             <li>
                               <span>Легенда: </span>
                               <p>На дворе недалекое будущее, 2154 год. Вы - группа ученых-неосомнологов,
-                                которая изучает сны. И сейчас вы находитесь в реабилитационном центре.
-                                К нам недавно попал мальчик 10-ти лет. По ночам его мучают кошмары.
-                                С ним случилось что-то страшное и ужасное, но мы не знаем что.
-                                И единственный способ это выяснить - поместить вас - ученых-неосомнологов - в его сон...
+                                которая изучает сны человека. К нам в реабилитационный центр недавно попал
+                                мальчик 10-ти лет. По ночам его мучают кошмары. С ним случилось что-то ужасное,
+                                но мы не знаем что именно. Единственный способ это выяснить - поместить
+                                вас в его страшный сон...
                               </p>
                             </li>
                           </ul>
@@ -249,8 +277,9 @@
               </div>
             </div>
 
-            <div class="col-sm-4 relative wow bounceInRight" data-wow-duration="1.5s">
-              <img src="../images/freezer.jpg">
+            <div class="col-sm-4 relative wow bounceInLeft" data-wow-duration="1.5s">
+              <img src="../images/freezer.jpg" alt="Морозильная камера">
+              <img class="promo" src="../images/promo.png" alt="">
               <div class="rooms-overlay">
                 <ul>
                   <li><span class="man"></span></li>
@@ -259,10 +288,18 @@
                 </ul>
                 <span class="quest-type">экстрим-квест</span>
                 <span class="age-limit">18+</span>
-                <span class="title">Квест: "Морозильная&nbsp;камера"</span>
-                <span class="cost">Цена: 1800-2100 рублей</span>
+                <span class="title">"Морозильная&nbsp;камера"</span>
+                <span class="cost">1800-2100 руб.</span>
+                <span class="difficulty">Сложность: для продвинутых</span>
+                <!--ul class="locks">
+                  <li><span class="lock lock-opened"></span></li>
+                  <li><span class="lock lock-opened"></span></li>
+                  <li><span class="lock lock-opened"></span></li>
+                  <li><span class="lock lock-opened"></span></li>
+                  <li><span class="lock lock-opened"></span></li>
+                </ul-->
                 <a href="#schedule" class="booking page-scroll room-select" data-room="3">Забронировать!</a>
-                <a class="booking more" data-toggle="modal" data-target="#freezerModal"> ... </a>
+                <a class="booking more" data-toggle="modal" data-target="#freezerModal">Подробнее</a>
               </div>
             </div>
 
@@ -279,30 +316,28 @@
                                   <div class="row">
 
                                       <div class="col-sm-4 col-md-4 col-lg-4">
-                                          <img src="../images/freezer.jpg">
+                                          <img src="../images/freezer.jpg" alt="Морозильная камера">
                                       </div>
 
                                       <div class="col-sm-5 col-md-7 col-lg-5">
                                           <ul>
                                               <li><span>Название квеста: </span><span>"Морозильная&nbsp;камера"</span></li>
                                               <li><span>Возрастные ограничения: </span><span> 18+ </span></li>
-                                              <li><span>Количество участников: </span><span> от 2 до 3 человек </span></li>
+                                              <li><span>Количество участников: </span><span> от 1 до 3 человек </span></li>
+                                              <li><span>Уровень сложности: </span><span> для продвинутых </span></li>
                                               <li><span>Стоимость: </span><p> 1800-2100 рублей</p></li>
                                               <li>
                                                   <span>Легенда: </span>
-                                                  <p>Будущее.</p>
-                                                  <p>Мутации стали распространяться по всему миру. Зараженные люди превращаются
-                                                      в ужасных монстров, не способных мыслить и готовых только пожирать все вокруг.
-                                                      Мутация может долгое время не проявлять себя, но тем не менее человек заражен.
-                                                      Катализатором мутации является усиленная мозговая деятельность в экстремальных условиях.</p>
+                                                  <p>Будущее. Мутации стали распространяться по всему миру. Зараженные люди
+                                                    превращаются в ужасных монстров. Мутация может долгое время не проявлять себя,
+                                                    но, тем не менее, человек заражен. Катализатором мутации является
+                                                    усиленная мозговая деятельность в экстремальных условиях.</p>
 
-                                                  <p>Объединенное правительство стран постановило провести «зачистку».
-                                                      «Зачистка» - принудительная проверка на наличие мутации и утилизация
-                                                      обнаруженных в ходе проверки зараженных особей.</p>
-                                                  <p>Вы находитесь в «Морозильной камере» - разработке профессора N, созданной
-                                                      специально для проверки населения на наличие мутации. Ваша задача
-                                                      пройти тест и доказать, что вы не заражены, иначе вы подлежите утилизации...</p>
-                                                  <p>Доступное время бронирования игр по акции Biglion: 15:15, 16:30, 17:45, 19:00.</p>
+                                                  <p>Вы находитесь в «Морозильной камере» - разработке профессора N,
+                                                    созданной специально для проверки населения на наличие мутации.
+                                                    Ваша задача пройти тест и доказать, что вы не заражены, иначе вы
+                                                    подлежите утилизации...</p>
+                                                  <p>* Cтоимость на ночные игры уточняйте у администратора.</p>
                                               </li>
                                           </ul>
                                       </div>
@@ -313,6 +348,29 @@
                       </div>
                   </div>
               </div>
+
+            <!--
+            <div class="col-sm-4 relative wow bounceInRight" data-wow-duration="2.0s">
+              <img src="../images/dark-house.jpg" alt="Сон">
+              <div class="rooms-overlay">
+                <ul>
+                  <li><span class="man"></span></li>
+                  <li><span class="man"></span></li>
+                  <li><span class="man"></span></li>
+                  <li><span class="man"></span></li>
+                  <li><span class="man"></span></li>
+                  <li><span class="man"></span></li>
+                  <li><span class="man"></span></li>
+                  <li><span class="man"></span></li>
+                </ul>
+                <span class="quest-type">квест-перфоманс</span>
+                <span class="age-limit">18+</span>
+                <span class="title">Квест: "ДОМ РАЗБИТЫХ ЗЕРКАЛ"</span>
+                <span class="cost">Цена: 500 р. / чел.</span>
+                <a class="booking">Скоро открытие...</a>
+              </div>
+            </div>
+            -->
 
           </div>
 
@@ -334,7 +392,7 @@
             </li>
           </ul>
 
-          <iframe id="schedule" src="http://admin.rooms76.com/schedule.html?room=1" width="100%" height="688px"></iframe>
+          <iframe id="schedule" src="http://admin.rooms76.com/schedule.html?room=1" height="750px"></iframe>
 
         </div><!--<div class="container content">-->
 
@@ -343,102 +401,121 @@
       <div id="process" class="row">
 
         <div class="col-xs-4 col-sm-3 point wow bounceInLeft" data-wow-duration="0.2s">
-          <div><img src="../images/phone.png"></div>
+          <div><img src="../images/phone.png" alt="Позвони и запишись на игру"></div>
           <div><p>Позвони и запишись на игру</p></div>
         </div>
         <div class="col-sm-1 arrow wow bounceInLeft hidden-xs" data-wow-duration="0.4s">
-          <div><img src="../images/first-arrow.png"></div>
+          <div><img src="../images/first-arrow.png" alt=""></div>
         </div>
         <div class="col-xs-4 col-sm-3 point wow bounceInLeft" data-wow-duration="0.6s">
-          <div><img src="../images/team.png"></div>
+          <div><img src="../images/team.png" alt="Приходи за 5 минут до начала игры"></div>
           <div><p>Приходи за 5 минут до начала игры</p></div>
         </div>
         <div class="col-sm-1 arrow wow bounceInLeft hidden-xs" data-wow-duration="0.8s">
-          <div><img src="../images/second-arrow.png"></div>
+          <div><img src="../images/second-arrow.png" alt=""></div>
         </div>
         <div class="col-xs-4 col-sm-3 point wow bounceInLeft" data-wow-duration="1.0s">
-          <div><img src="../images/happy.png"></div>
+          <div><img src="../images/happy.png" alt="Получи огромное удовольствие!"></div>
           <div><p>Получи огромное удовольствие!</p></div>
         </div>
 
       </div><!--<div id="process" class="row">-->
 
       <div id="for-who" class="row">
-        <div class="col-xs-offset-0 col-xs-4 col-sm-offset-1 col-sm-2 point wow bounceInRight" data-wow-duration="0.2s">
-          <img src="../images/heart.png"><br/>
+        <div class="col-xs-offset-0 col-xs-4 col-sm-offset-1 col-sm-2 point wow bounceInLeft" data-wow-duration="0.2s">
+          <img src="../images/heart.png" alt="Для влюбленных"><br/>
           <p>Для влюбленных</p>
           <p>Отличная идея для свидания</p>
         </div>
-        <div class="col-xs-4 col-sm-2 point wow bounceInRight" data-wow-duration="0.4s">
-          <img class="friends" src="../images/cinema.png"><br/>
+        <div class="col-xs-4 col-sm-2 point wow bounceInLeft" data-wow-duration="0.4s">
+          <img class="friends" src="../images/cinema.png" alt="Для друзей"><br/>
           <p>Для друзей</p>
           <p>Альтернатива походу в кино</p>
         </div>
-        <div class="col-xs-4 col-sm-2 point wow bounceInRight" data-wow-duration="0.6s">
-          <img src="../images/work.png"><br/>
+        <div class="col-xs-4 col-sm-2 point wow bounceInLeft" data-wow-duration="0.6s">
+          <img src="../images/work.png" alt="Для коллег"><br/>
           <p>Для коллег</p>
           <p>Сплотит Ваш коллектив</p>
         </div>
-        <div class="col-xs-offset-2 col-xs-4 col-sm-offset-0 col-sm-2 point wow bounceInRight" data-wow-duration="0.8s">
-          <img class="family" src="../images/student.png"><br/>
+        <div class="col-xs-offset-2 col-xs-4 col-sm-offset-0 col-sm-2 point wow bounceInLeft" data-wow-duration="0.8s">
+          <img class="family" src="../images/student.png" alt="Для студентов"><br/>
           <p>Для студентов</p>
           <p>Провести время с товарищами</p>
         </div>
-        <div class="col-xs-4 col-sm-2 point wow bounceInRight" data-wow-duration="0.8s">
-          <img class="family" src="../images/tv.png"><br/>
+        <div class="col-xs-4 col-sm-2 point wow bounceInLeft" data-wow-duration="0.8s">
+          <img class="family" src="../images/tv.png" alt="Для семьи"><br/>
           <p>Для семьи</p>
           <p>Вместо просмотра телевизора</p>
         </div>
       </div><!--<div id="process" class="row">-->
 
-      <div id="participants" class="row">
+      <div id="certificates" class="row">
+
+        <div class="wow bounceInUp" data-wow-duration="1.7s">
+          <div class="col-xs-12">
+            <div class="section-header text-center">Сертификаты</div>
+          </div>
+        </div>
+
+        <div class="description text-center wow zoomInDown">
+          <h2>Друзья! Сделать продуманный подарок стало намного проще!</h2>
+          <h2>Для человека, любящего подумать - это интеллект-квест "Кабинет Деда", для поклонника фильма ужасов -
+            квест-перфоманс "Сон", для мегаактивных экстремалов - экстрим-квест "Морозильная камера".</h2>
+        </div>
 
         <div class="container content">
 
           <div class="row">
 
-            <div class="col-sm-2 col-xs-4 wow bounceInRight" data-wow-duration="0.2s">
-              <a href="http://vk.com/album-75004909_203159149" class="all" target="_blank">
-                <img src="../images/participants/1.jpg">
+            <div class="col-sm-4 wow bounceInLeft" data-wow-duration="0.5s">
+              <a class="all">
+                <img src="../images/certificates/grandfather.jpg" alt="Сертификат на квест кабинет">
+                <div class="text-center"><span class="cert-price">1200</span></div>
               </a>
             </div>
 
-            <div class="col-sm-2 col-xs-4 wow bounceInRight" data-wow-duration="0.4s">
-              <a href="http://vk.com/album-75004909_203159149" class="all" target="_blank">
-                <img src="../images/participants/2.jpg">
+            <div class="col-sm-4 wow bounceInLeft" data-wow-duration="1.0s">
+              <a class="all">
+                <img src="../images/certificates/coh.jpg" alt="Сертификат на квест сон">
+                <div class="text-center"><span class="cert-price">4000</span></div>
               </a>
             </div>
 
-            <div class="col-sm-2 col-xs-4 wow bounceInRight" data-wow-duration="0.6s">
-              <a href="http://vk.com/album-75004909_203159149" class="all" target="_blank">
-                <img src="../images/participants/3.jpg">
-              </a>
-            </div>
-
-            <div class="col-sm-2 col-xs-4 hidden-xs wow bounceInRight" data-wow-duration="0.8s">
-              <a href="http://vk.com/album-75004909_203159149" class="all" target="_blank">
-                <img src="../images/participants/4.jpg">
-              </a>
-            </div>
-
-            <div class="col-sm-2 col-xs-4 hidden-xs wow bounceInRight" data-wow-duration="1.0s">
-              <a href="http://vk.com/album-75004909_203159149" class="all" target="_blank">
-                <img src="../images/participants/5.jpg">
-              </a>
-            </div>
-
-            <div class="col-sm-2 col-xs-4 hidden-xs wow bounceInRight" data-wow-duration="1.2s">
-              <a href="http://vk.com/album-75004909_203159149" class="all" target="_blank">
-                <img src="../images/participants/6.jpg">
+            <div class="col-sm-4 wow bounceInLeft" data-wow-duration="1.5s">
+              <a class="all">
+                <img src="../images/certificates/freezer.jpg" alt="Сертификат на квест морозильная камера">
+                <div class="text-center"><span class="cert-price">2000</span></div>
               </a>
             </div>
 
           </div>
-          <div class="row wow bounceInLeft" data-wow-duration="1.4s">
-            <a href="http://vk.com/album-75004909_203159149" class="all link" target="_blank">Все участники --></a>
-          </div>
 
-          <div class="row wow bounceInRight" data-wow-duration="1.5s">
+        </div><!--<div class="container content">  -->
+
+      </div>
+      
+      <div id="organization" class="row">
+
+        <div class="wow bounceInLeft" data-wow-duration="1.5s">
+          <div class="col-xs-12">
+            <div class="section-header text-center">Организациям</div>
+          </div>
+        </div>
+
+        <div class="container content text-center">
+          <h2>Скоро корпоратив? Хотите удивить начальника или коллег по работе?</h2>
+          <h2>Мы вам поможем!</h2>
+          <h2>Новая услуга для организаций</h2>
+          <h2><a href="./organization.html">ВЫЕЗДНОЙ КВЕСТ</a></h2>
+        </div>
+
+      </div>
+
+      <div id="participants" class="row">
+
+        <div class="container content">
+
+          <div class="wow bounceInLeft" data-wow-duration="1.5s">
             <div class="col-xs-12">
               <div class="video-title text-center">СМИ о нас</div>
             </div>
@@ -451,23 +528,9 @@
 
       </div>
 
-      <div class="description text-center wow zoomInDown">
-        <h2><span class="cp"><a href="http://vk.com/rooms76" target="_blank">RoomS</a></span> - это
-          первое в Ярославле игровое развлечение в жанре “выберись из комнаты” в реальной жизни
-           <a href="http://vk.com/rooms76">#rooms76</a>
-           <a href="#">rooms76.com</a></h2>
-        <h2>Мы радуем ярославцев и гостей нашего города с 15 сентября 2014 года!</h2>
-        <h2>Наши гости попадают в закрытую тематическую комнату. Задача игры - выбраться из комнаты за 60 минут.
-           Здесь все как в компьютерной игре, только по-настоящему: можно трогать и брать в руки предметы обстановки,
-           открывать шкафы и двери.</h2>
-        <h2>Сейчас открыты 2 комнаты: "Кабинет" и "Сон"</h2>
-        <h2>Возрастные ограничения: 16+</h2>
-        <h2>Запись по телефону +7(920)10-282-10</h2>
-      </div>
-
       <div id="partners" class="row">
 
-        <div class="row wow bounceInRight" data-wow-duration="1.5s">
+        <div class="wow bounceInUp" data-wow-duration="1.7s">
           <div class="col-xs-12">
             <div class="section-header text-center">Наши партнеры</div>
           </div>
@@ -477,9 +540,27 @@
 
           <div class="row">
 
-            <div class="col-sm-2 col-xs-4 wow bounceInRight" data-wow-duration="0.2s">
+            <div class="col-sm-offset-2 col-sm-2 col-xs-4 wow bounceInLeft" data-wow-duration="0.5s">
               <a href="http://fg-legion.com" class="all" target="_blank">
-                <img src="../images/partners/legion.jpg">
+                <img src="../images/partners/legion.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="col-sm-2 col-xs-4 wow bounceInLeft" data-wow-duration="1.0s">
+              <a href="" class="all" target="_blank">
+                <img src="../images/partners/glazunovsemenov.png" alt="" style="box-shadow: none;">
+              </a>
+            </div>
+
+            <div class="col-sm-2 col-xs-4 wow bounceInLeft" data-wow-duration="1.5s">
+                <a href="http://temper-it.com/" class="all" target="_blank">
+                    <img src="../images/partners/temper-it.png" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-2 col-xs-4 wow bounceInLeft" data-wow-duration="2.0s">
+              <a href="" class="all" target="_blank">
+                <img src="../images/partners/2angels.png" alt="">
               </a>
             </div>
 
@@ -497,10 +578,10 @@
             <p><span class="it">Адрес:</span> г. Ярославль ул. Красный Съезд  д. 10в </p>
             <p><span class="it">Тел.:</span> +7(920)10-282-10</p>
             <p><span class="it">e-mail: </span>rooms76@bk.ru</p>
-            <p><span class="it">Стоимость:</span><br>
+            <!--p><span class="it">Стоимость:</span><br>
                <span class="cost-cmp">квест "Кабинет": 1000-1200 рублей с команды,</span><br>
                <span class="cost-cmp">квест "Сон": 500 рублей с человека,</span><br>
-               <span class="cost-cmp">квест "Морозильная&nbsp;камера": 1800-2100 рублей с команды.</span></p>
+               <span class="cost-cmp">квест "Морозильная&nbsp;камера": 1800-2100 рублей с команды.</span></p-->
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInRight" data-wow-duration="0.5s">
@@ -564,29 +645,41 @@
       <div id="footer" class="row">
 
         <div class="container">
-          <div class="row text-center">
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-4 text-center">
 
-            <div style="margin: 90px;"></div>
+              <div class="gap"></div>
 
-            <h5>Присоединяйтесь!</h5>
+              <h5>Присоединяйтесь!</h5>
 
-            <ul class="list-inline">
+              <ul class="list-inline">
 
-              <li>
-                <a href="http://vk.com/rooms76" class="link-contrast footer-icon-container" target="_blank">
-                  <i class="icon footer-icon icon-vk"></i>
-                </a>
-              </li>
+                <li>
+                  <a href="http://vk.com/rooms76" class="link-contrast footer-icon-container" target="_blank">
+                    <i class="icon footer-icon icon-vk"></i>
+                  </a>
+                </li>
 
-              <li>
-                <a href="http://instagram.com/rooms_76" class="link-contrast footer-icon-container" target="_blank">
-                  <i class="icon footer-icon icon-instagram"></i>
-                </a>
-              </li>
+                <li>
+                  <a href="http://instagram.com/rooms_76" class="link-contrast footer-icon-container" target="_blank">
+                    <i class="icon footer-icon icon-instagram"></i>
+                  </a>
+                </li>
 
-            </ul>
+                <li>
+                  <a href="https://www.facebook.com/rooms76" class="link-contrast footer-icon-container" target="_blank">
+                    <i class="icon footer-icon icon-facebook"></i>
+                  </a>
+                </li>
 
-            <p>&copy; <span class="cp">RoomS</span>. <span id="year">2014-2015</span></p>
+              </ul>
+
+              <p>&copy; <span class="cp">RoomS</span>. <span id="year">2014-2015</span></p>
+            </div>
+            <div class="col-sm-2 col-sm-offset-1">
+              <div class="gap hidden-xs"></div>
+              <a href="http://temper-it.com/"><img class="temper-it" src="../images/logo6.png" alt="temper-it.com"></a>
+            </div>
 
           </div>
         </div>
