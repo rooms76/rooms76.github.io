@@ -33,10 +33,16 @@ body{
   background: #e8e8e8 url("../images/wall.jpg");
   background-size: 40%;
 }
+.schedule-wrapper {
+    overflow: hidden;
+    width: 100%;
+    border: none;
+    background-color: #FFF;
+}
 iframe {
-    width: 1px;
-    min-width: 100%;
-    *width: 100%;
+    overflow: scroll !important;
+    width: 100%;;
+    border: none;
 }
 span.cp {
     color: #831f2b;
