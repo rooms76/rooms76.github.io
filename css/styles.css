@@ -529,6 +529,9 @@ span.cp-big {
     margin-top: 2%;
     margin-bottom: 2%;
 }
+img.promo {
+    width: 100%;
+}
 #contacts {
     color: #333;
     background-color: #fcfcfc;
@@ -685,14 +688,24 @@ img.temper-it {
     }
 }
 
+@media only screen and (max-width: 1065px) {
+    .navbar-default .navbar-nav>li>a {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 21px;
+        font-weight: bold;
+    }
+}
+
 @media only screen and (max-width: 995px) {
     .top-phone {
         font-size: 20px;
         position: relative;
-        top: 8px;
+        top: 13px;
     }
     .navbar-default .navbar-nav>li>a {
-        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
         font-size: 21px;
         font-weight: bold;
     }
@@ -710,6 +723,15 @@ img.temper-it {
     #rooms a.booking.more {
         right: 2%;
         padding: 0% 5% 0% 1%;
+    }
+}
+
+@media only screen and (max-width: 823px) {
+    .navbar-default .navbar-nav>li>a {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 18px;
+        font-weight: bold;
     }
 }
 

@@ -418,13 +418,23 @@ img.temper-it {
     .top-phone {
         font-size: 20px;
         position: relative;
-        top: 8px;
+        top: 13px;
     }
     .navbar-default .navbar-nav>li>a {
-        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .offer {
         margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    .navbar-default .navbar-nav>li>a {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 21px;
+        font-weight: bold;
     }
 }
 
