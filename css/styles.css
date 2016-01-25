@@ -466,6 +466,23 @@ span.cp-big {
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 26px;
 }
+.rooms-gallery {
+    width: 100%;
+    float: left;
+}
+.rooms-gallery img {
+    width: 100%;
+    height: auto;
+}
+.rooms-gallery figure {
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 150px;
+}
+.rooms-gallery figcaption {
+    display: none;
+}
 #participants {
     padding: 7% 0 3%;
 }
