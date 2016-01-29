@@ -34,15 +34,19 @@ body{
   background-size: 40%;
 }
 .schedule-wrapper {
-    overflow: hidden;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     width: 100%;
     border: none;
     background-color: #FFF;
 }
 iframe {
     overflow: scroll !important;
-    width: 100%;;
     border: none;
+    width: 1px;
+    min-width: 100%;
+    *width: 100%;
+
 }
 span.cp {
     color: #831f2b;
