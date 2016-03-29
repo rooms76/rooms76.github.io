@@ -470,6 +470,44 @@ span.cp-big {
     font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 26px;
 }
+#partner-form h2 span.phone {
+    color: #ff6666;
+    color: #f55674;
+}
+#partner-form h2 {
+    color: #555;
+    font-family: 'Neucha',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 26px;
+}
+#partner-form form input.form-control {
+    border-color: #831f2b;
+}
+#partner-form form input.form-control:focus {
+    border-color: #f55674;
+    box-shadow: 0 0 5px 1px #f55674;
+}
+#partner-form form textarea.form-control {
+    border-color: #831f2b;
+}
+#partner-form form textarea.form-control:focus {
+    border-color: #f55674;
+    box-shadow: 0 0 5px 1px #f55674;
+}
+#partner-form .btn-nice {
+    color: #fff;
+    background-color: #05a675;
+    border-color: #05a675;
+}
+#partner-form .btn-nice:hover,
+#partner-form .btn-nice:focus {
+    color: #fff;
+    background-color: #06C58B;
+    border-color: #05a675;
+}
+#partner-form form.form-inline-small-padding .col-sm-3 {
+    padding-left: 2px;
+    padding-right: 2px;
+}
 .rooms-gallery {
     width: 100%;
     float: left;
