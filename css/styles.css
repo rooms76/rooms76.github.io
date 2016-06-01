@@ -28,7 +28,7 @@
 }
 
 body{
-  min-height: 100%; 
+  min-height: 100%;
   font-family: verdana, sans-serif;
   background: #e8e8e8 url("../images/wall.jpg");
   background-size: 40%;
@@ -218,9 +218,11 @@ span.cp-big {
 .offer h1 {
     color: #ccc;
     font-size: 45px;
-    background-image: url(../images/stripes.png);
+    background-image: url(../images/rooms-new.jpg);
     background-repeat: no-repeat;
     background-position: 50%;
+    background-size: contain;
+    height: 500px;
 }
 .offer h2 {
     color: #555;
