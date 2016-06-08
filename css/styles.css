@@ -218,7 +218,8 @@ span.cp-big {
 .offer h1 {
     color: #ccc;
     font-size: 45px;
-    background-image: url(../images/rooms-new.jpg);
+    /*background-image: url(../images/rooms-new.jpg);*/
+    background-image: url(../images/kvesty2.png);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: contain;
