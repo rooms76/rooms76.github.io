@@ -910,7 +910,7 @@ Don't modify these 3 pswp__item elements, data is added later on. -->
     event.preventDefault();
     var a = $(this);
     var room_id = a.attr('data-room');
-    var url = 'http://admin.rooms76.com/schedule.html?room=' + room_id;
+    var url = 'http://rooms-booking-system.herokuapp.com/schedule.html?room=' + room_id;
     var nav_li = $('li[data-room="'+room_id+'"]');
     $('.nav.nav-tabs li.active').removeClass('active');
     nav_li.addClass('active');
